@@ -133,39 +133,6 @@ HR\;(\mathrm{BPM}) = \frac{60\,000}{RR_i\;(\mathrm{ms})}
 
 Algorithmically derived RR intervals should not automatically be described as clinically adjudicated normal-to-normal (NN) intervals.
 
-### 5.4 Beat-window segmentation
-
-The current segmentation configuration uses a fixed **800 ms window** around each R-peak.
-
-| Window component | Duration | Relative time |
-|---|---:|---:|
-| Pre-R | 250 ms | −250 ms to 0 ms |
-| Post-R | 550 ms | 0 ms to +550 ms |
-| **Total window** | **800 ms** | **−250 ms to +550 ms** |
-
-The R-peak is the alignment point at **0 ms**.
-
-The number of samples depends on the sampling frequency:
-
-| Sampling rate | Pre-R samples | Post-R samples | Total samples per lead |
-|---|---:|---:|---:|
-| 100 Hz | 25 | 55 | 80 |
-| 500 Hz | 125 | 275 | 400 |
-
-Each accepted beat is extracted synchronously across all 12 leads. Boundary checks ensure that the requested window fits within the available signal. The checks also account for recordings where one lead, such as V6, is shorter than the others.
-
-### 5.5 Window-overlap analysis
-
-Two consecutive 800 ms beat windows overlap when the time between their R-peaks is shorter than 800 ms:
-
-\[
-RR_i < 800\ \mathrm{ms}
-\]
-
-Overlap is a consequence of the fixed window length and the observed RR intervals. It does not, by itself, indicate failed R-peak detection. However, overlapping windows are statistically dependent.
-
-For downstream model evaluation, all recordings and beats belonging to one subject should remain in the same data partition. Randomly splitting individual beats across training and test sets can cause patient-level data leakage and overly optimistic performance estimates.
-
 ### 5.6 Median beat morphology
 
 For diagnostic visualization, beat waveforms are grouped by phase and summarized using a sample-wise median waveform for each lead. This allows Rest, Stress, and Recovery morphology to be compared on a common R-peak-aligned time axis.
