@@ -1,0 +1,631 @@
+--- Cell16_current.py
++++ Cell16_with_guard.py
+@@ -1,155 +1,160 @@
+-# Load serialized splits and summary for visualization
+
+-df_splits_viz = pd.read_csv(validation_splits_csv_path)
+
+-with open(validation_summary_json_path, "r", encoding="utf-8") as f:
+
+-    summary_viz = json.load(f)
+
+-
+
+-# Configure publication matplotlib styling
+
+-plt.rcParams.update({
+
+-    "font.family": "sans-serif",
+
+-    "font.size": 10,
+
+-    "axes.titlesize": 11,
+
+-    "axes.labelsize": 10,
+
+-    "xtick.labelsize": 9,
+
+-    "ytick.labelsize": 9,
+
+-    "figure.titlesize": 13,
+
+-    "figure.dpi": 300,
+
+-    "savefig.dpi": 300
+
+-})
+
+-
+
+-# ==============================================================================
+
+-# Figure 1: Cross-Validation Split Distribution & Balance Matrix
+
+-# ==============================================================================
+
+-fig1, (ax1a, ax1b, ax1c) = plt.subplots(1, 3, figsize=(18, 5.5))
+
+-
+
+-# Panel A: Fold Composition in Repeat 0
+
+-rep0_data = summary_viz["repeat_fold_distributions"]["repeat_0"]["folds"]
+
+-fold_names = [f"Fold {i}" for i in range(5)]
+
+-pos_counts = [rep0_data[f"fold_{i}"]["val_positives"] for i in range(5)]
+
+-neg_counts = [rep0_data[f"fold_{i}"]["val_negatives"] for i in range(5)]
+
+-
+
+-x = np.arange(5)
+
+-width = 0.55
+
+-ax1a.bar(x, neg_counts, width, label="Negative (MSIMI-)", color="#2b5c8f", alpha=0.85)
+
+-ax1a.bar(x, pos_counts, width, bottom=neg_counts, label="Positive (MSIMI+)", color="#d95f02", alpha=0.9)
+
+-
+
+-for i in range(5):
+
+-    total = pos_counts[i] + neg_counts[i]
+
+-    ax1a.text(i, total + 0.3, f"N={total}\n({pos_counts[i]}+ / {neg_counts[i]}-)", 
+
+-              ha="center", va="bottom", fontsize=8.5, fontweight="bold")
+
+-
+
+-ax1a.set_xticks(x)
+
+-ax1a.set_xticklabels(fold_names)
+
+-ax1a.set_ylabel("Validation Subject Count")
+
+-ax1a.set_title("A. Validation Fold Composition (Repeat 0)")
+
+-ax1a.set_ylim(0, 20)
+
+-ax1a.legend(loc="upper right", framealpha=0.9)
+
+-ax1a.grid(axis="y", linestyle="--", alpha=0.4)
+
+-
+
+-# Panel B: Subject Allocation Matrix Across Repeats (First 30 Eligible Subjects)
+
+-df_eligible_viz = df_splits_viz[df_splits_viz["validation_eligible"]].head(30)
+
+-fold_matrix = df_eligible_viz[[f"repeat_{i}_fold" for i in range(5)]].values
+
+-
+
+-cmap = matplotlib.colormaps["viridis"].resampled(5)
+
+-im = ax1b.imshow(fold_matrix, aspect="auto", cmap=cmap, interpolation="nearest")
+
+-ax1b.set_xticks(np.arange(5))
+
+-ax1b.set_xticklabels([f"Rep {i}" for i in range(5)])
+
+-ax1b.set_yticks(np.arange(len(df_eligible_viz)))
+
+-ax1b.set_yticklabels(df_eligible_viz["subject_id"], fontsize=7.5)
+
+-ax1b.set_title("B. Subject Fold Assignment Matrix")
+
+-ax1b.set_xlabel("Repeat Index")
+
+-ax1b.set_ylabel("Patient Identifier (First 30)")
+
+-cbar = fig1.colorbar(im, ax=ax1b, ticks=[0, 1, 2, 3, 4], shrink=0.8)
+
+-cbar.set_label("Assigned Validation Fold ID", fontsize=8.5)
+
+-
+
+-# Panel C: Validation Positive Prevalence Across All 25 Folds
+
+-all_val_prevalences = []
+
+-for r_key, r_dict in summary_viz["repeat_fold_distributions"].items():
+
+-    for f_key, f_stats in r_dict["folds"].items():
+
+-        all_val_prevalences.append(f_stats["val_positive_ratio"] * 100)
+
+-
+
+-ax1c.hist(all_val_prevalences, bins=8, color="#7570b3", edgecolor="white", alpha=0.85)
+
+-ax1c.axvline(11.54, color="crimson", linestyle="--", linewidth=2, label="Cohort Prevalence (11.5%)")
+
+-ax1c.set_xlabel("Validation Fold Positive Prevalence (%)")
+
+-ax1c.set_ylabel("Fold Count (Total = 25)")
+
+-ax1c.set_title("C. Validation Prevalence Stability Across All 25 Folds")
+
+-ax1c.legend(loc="upper right", framealpha=0.9)
+
+-ax1c.grid(axis="y", linestyle="--", alpha=0.4)
+
+-
+
+-plt.tight_layout()
+
+-fig1.savefig(figure_cv_dist_path, dpi=300)
+
+-plt.close(fig1)
+
+-print(f"  [FIGURE 1 SAVED] {figure_cv_dist_path.relative_to(project_root)} ({figure_cv_dist_path.stat().st_size:,} bytes)")
+
+-
+
+-# ==============================================================================
+
+-# Figure 2: Patient Eligibility, Strata Grouping & Imbalance Architecture
+
+-# ==============================================================================
+
+-fig2, (ax2a, ax2b, ax2c) = plt.subplots(1, 3, figsize=(18, 5.5))
+
+-
+
+-# Panel A: Cohort Diagnostic Distribution Donut Chart
+
+-labels_pie = ["Negative (69)", "Positive (9)", "Unlabelled Holdout (2)"]
+
+-sizes_pie = [69, 9, 2]
+
+-colors_pie = ["#2b5c8f", "#d95f02", "#7f7f7f"]
+
+-explode_pie = (0, 0.08, 0.12)
+
+-
+
+-wedges, texts, autotexts = ax2a.pie(
+
+-    sizes_pie, 
+
+-    explode=explode_pie, 
+
+-    labels=labels_pie, 
+
+-    autopct="%1.1f%%",
+
+-    pctdistance=0.8,
+
+-    startangle=140, 
+
+-    colors=colors_pie,
+
+-    wedgeprops=dict(width=0.42, edgecolor="white", linewidth=2)
+
+-)
+
+-for at in autotexts:
+
+-    at.set_fontsize(8.5)
+
+-    at.set_fontweight("bold")
+
+-ax2a.set_title("A. 80-Patient Cohort Diagnostic Composition")
+
+-
+
+-# Panel B: Sampling-Rate Strata & Missingness Profile
+
+-strata_labels = ["100 Hz Rest\n(80/80)", "100 Hz Stress\n(64/80)", "100 Hz Recover\n(80/80)",
+
+-                 "500 Hz Rest\n(80/80)", "500 Hz Stress\n(80/80)", "500 Hz Recover\n(80/80)"]
+
+-completed_counts = [80, 64, 80, 80, 80, 80]
+
+-missing_counts = [0, 16, 0, 0, 0, 0]
+
+-
+
+-x_strata = np.arange(len(strata_labels))
+
+-ax2b.bar(x_strata, completed_counts, width=0.55, label="Complete Data", color="#1b9e77", alpha=0.85)
+
+-ax2b.bar(x_strata, missing_counts, width=0.55, bottom=completed_counts, label="Skipped Upstream Error", color="#e7298a", alpha=0.9)
+
+-
+
+-ax2b.set_xticks(x_strata)
+
+-ax2b.set_xticklabels(strata_labels, fontsize=8)
+
+-ax2b.set_ylabel("Patient Recording Count")
+
+-ax2b.set_ylim(0, 100)
+
+-ax2b.set_title("B. Multi-Rate Strata Recording Completeness")
+
+-ax2b.legend(loc="lower right", framealpha=0.9)
+
+-ax2b.grid(axis="y", linestyle="--", alpha=0.4)
+
+-
+
+-# Panel C: Patient-Level Grouping Boundary Architecture
+
+-ax2c.axis("off")
+
+-ax2c.text(0.5, 0.95, "Patient-Level Grouping Boundary Invariant", ha="center", va="top", fontsize=11, fontweight="bold")
+
+-
+
+-box_text = (
+
+-    "\n"
+
+-    "  [PATIENT ENTITY: sub_XXX]\n"
+
+-    "  ├── Ground-Truth Label: MSIMI-based-ecg (Fixed per patient)\n"
+
+-    "  ├── Multi-Rate Strata:\n"
+
+-    "  │     ├── 100 Hz Stratum (Rest, Stress, Recover) ───┐\n"
+
+-    "  │     └── 500 Hz Stratum (Rest, Stress, Recover) ───┤ Co-located Fold\n"
+
+-    "  └── Cross-Validation Assignment:                     │ Assignment\n"
+
+-    "        ├── FOLD k (TRAIN)   <── All strata train ────┘\n"
+
+-    "        └── FOLD k (VAL)     <── All strata validate (ZERO leakage)\n"
+
+-    "\n"
+
+-    "  [UNLABELLED HOLDOUTS: sub_005, sub_049]\n"
+
+-    "  ├── Diagnosis: 'no description' (UNSPECIFIED)\n"
+
+-    "  ├── Non-Imputation Policy: Strict zero-imputation\n"
+
+-    "  └── Fold Assignment: fold_id = -1 (EXCLUDED from CV)"
+
+-)
+
+-ax2c.text(0.05, 0.85, box_text, ha="left", va="top", fontfamily="monospace", fontsize=8.5,
+
+-          bbox=dict(boxstyle="round,pad=0.8", facecolor="#f8f9fa", edgecolor="#333333", alpha=0.95))
+
+-ax2c.set_title("C. Grouping Safeguard Architecture")
+
+-
+
+-plt.tight_layout()
+
+-fig2.savefig(figure_eligibility_path, dpi=300)
+
+-plt.close(fig2)
+
+-print(f"  [FIGURE 2 SAVED] {figure_eligibility_path.relative_to(project_root)} ({figure_eligibility_path.stat().st_size:,} bytes)")
+
+-
++# Idempotent figure generation guard
+
++if not OVERWRITE_EXISTING_OUTPUTS and figure_cv_dist_path.exists() and figure_eligibility_path.exists():
+
++    print("[SKIP] Stage 09 visualization figures already exist and OVERWRITE_EXISTING_OUTPUTS=False.")
+
++    print("       Reusing existing figures without regeneration.")
+
++else:
+
++    # Load serialized splits and summary for visualization
+
++    df_splits_viz = pd.read_csv(validation_splits_csv_path)
+
++    with open(validation_summary_json_path, "r", encoding="utf-8") as f:
+
++        summary_viz = json.load(f)
+
++    
+
++    # Configure publication matplotlib styling
+
++    plt.rcParams.update({
+
++        "font.family": "sans-serif",
+
++        "font.size": 10,
+
++        "axes.titlesize": 11,
+
++        "axes.labelsize": 10,
+
++        "xtick.labelsize": 9,
+
++        "ytick.labelsize": 9,
+
++        "figure.titlesize": 13,
+
++        "figure.dpi": 300,
+
++        "savefig.dpi": 300
+
++    })
+
++    
+
++    # ==============================================================================
+
++    # Figure 1: Cross-Validation Split Distribution & Balance Matrix
+
++    # ==============================================================================
+
++    fig1, (ax1a, ax1b, ax1c) = plt.subplots(1, 3, figsize=(18, 5.5))
+
++    
+
++    # Panel A: Fold Composition in Repeat 0
+
++    rep0_data = summary_viz["repeat_fold_distributions"]["repeat_0"]["folds"]
+
++    fold_names = [f"Fold {i}" for i in range(5)]
+
++    pos_counts = [rep0_data[f"fold_{i}"]["val_positives"] for i in range(5)]
+
++    neg_counts = [rep0_data[f"fold_{i}"]["val_negatives"] for i in range(5)]
+
++    
+
++    x = np.arange(5)
+
++    width = 0.55
+
++    ax1a.bar(x, neg_counts, width, label="Negative (MSIMI-)", color="#2b5c8f", alpha=0.85)
+
++    ax1a.bar(x, pos_counts, width, bottom=neg_counts, label="Positive (MSIMI+)", color="#d95f02", alpha=0.9)
+
++    
+
++    for i in range(5):
+
++        total = pos_counts[i] + neg_counts[i]
+
++        ax1a.text(i, total + 0.3, f"N={total}\n({pos_counts[i]}+ / {neg_counts[i]}-)", 
+
++                  ha="center", va="bottom", fontsize=8.5, fontweight="bold")
+
++    
+
++    ax1a.set_xticks(x)
+
++    ax1a.set_xticklabels(fold_names)
+
++    ax1a.set_ylabel("Validation Subject Count")
+
++    ax1a.set_title("A. Validation Fold Composition (Repeat 0)")
+
++    ax1a.set_ylim(0, 20)
+
++    ax1a.legend(loc="upper right", framealpha=0.9)
+
++    ax1a.grid(axis="y", linestyle="--", alpha=0.4)
+
++    
+
++    # Panel B: Subject Allocation Matrix Across Repeats (First 30 Eligible Subjects)
+
++    df_eligible_viz = df_splits_viz[df_splits_viz["validation_eligible"]].head(30)
+
++    fold_matrix = df_eligible_viz[[f"repeat_{i}_fold" for i in range(5)]].values
+
++    
+
++    cmap = matplotlib.colormaps["viridis"].resampled(5)
+
++    im = ax1b.imshow(fold_matrix, aspect="auto", cmap=cmap, interpolation="nearest")
+
++    ax1b.set_xticks(np.arange(5))
+
++    ax1b.set_xticklabels([f"Rep {i}" for i in range(5)])
+
++    ax1b.set_yticks(np.arange(len(df_eligible_viz)))
+
++    ax1b.set_yticklabels(df_eligible_viz["subject_id"], fontsize=7.5)
+
++    ax1b.set_title("B. Subject Fold Assignment Matrix")
+
++    ax1b.set_xlabel("Repeat Index")
+
++    ax1b.set_ylabel("Patient Identifier (First 30)")
+
++    cbar = fig1.colorbar(im, ax=ax1b, ticks=[0, 1, 2, 3, 4], shrink=0.8)
+
++    cbar.set_label("Assigned Validation Fold ID", fontsize=8.5)
+
++    
+
++    # Panel C: Validation Positive Prevalence Across All 25 Folds
+
++    all_val_prevalences = []
+
++    for r_key, r_dict in summary_viz["repeat_fold_distributions"].items():
+
++        for f_key, f_stats in r_dict["folds"].items():
+
++            all_val_prevalences.append(f_stats["val_positive_ratio"] * 100)
+
++    
+
++    ax1c.hist(all_val_prevalences, bins=8, color="#7570b3", edgecolor="white", alpha=0.85)
+
++    ax1c.axvline(11.54, color="crimson", linestyle="--", linewidth=2, label="Cohort Prevalence (11.5%)")
+
++    ax1c.set_xlabel("Validation Fold Positive Prevalence (%)")
+
++    ax1c.set_ylabel("Fold Count (Total = 25)")
+
++    ax1c.set_title("C. Validation Prevalence Stability Across All 25 Folds")
+
++    ax1c.legend(loc="upper right", framealpha=0.9)
+
++    ax1c.grid(axis="y", linestyle="--", alpha=0.4)
+
++    
+
++    plt.tight_layout()
+
++    fig1.savefig(figure_cv_dist_path, dpi=300)
+
++    plt.close(fig1)
+
++    print(f"  [FIGURE 1 SAVED] {figure_cv_dist_path.relative_to(project_root)} ({figure_cv_dist_path.stat().st_size:,} bytes)")
+
++    
+
++    # ==============================================================================
+
++    # Figure 2: Patient Eligibility, Strata Grouping & Imbalance Architecture
+
++    # ==============================================================================
+
++    fig2, (ax2a, ax2b, ax2c) = plt.subplots(1, 3, figsize=(18, 5.5))
+
++    
+
++    # Panel A: Cohort Diagnostic Distribution Donut Chart
+
++    labels_pie = ["Negative (69)", "Positive (9)", "Unlabelled Holdout (2)"]
+
++    sizes_pie = [69, 9, 2]
+
++    colors_pie = ["#2b5c8f", "#d95f02", "#7f7f7f"]
+
++    explode_pie = (0, 0.08, 0.12)
+
++    
+
++    wedges, texts, autotexts = ax2a.pie(
+
++        sizes_pie, 
+
++        explode=explode_pie, 
+
++        labels=labels_pie, 
+
++        autopct="%1.1f%%",
+
++        pctdistance=0.8,
+
++        startangle=140, 
+
++        colors=colors_pie,
+
++        wedgeprops=dict(width=0.42, edgecolor="white", linewidth=2)
+
++    )
+
++    for at in autotexts:
+
++        at.set_fontsize(8.5)
+
++        at.set_fontweight("bold")
+
++    ax2a.set_title("A. 80-Patient Cohort Diagnostic Composition")
+
++    
+
++    # Panel B: Sampling-Rate Strata & Missingness Profile
+
++    strata_labels = ["100 Hz Rest\n(80/80)", "100 Hz Stress\n(64/80)", "100 Hz Recover\n(80/80)",
+
++                     "500 Hz Rest\n(80/80)", "500 Hz Stress\n(80/80)", "500 Hz Recover\n(80/80)"]
+
++    completed_counts = [80, 64, 80, 80, 80, 80]
+
++    missing_counts = [0, 16, 0, 0, 0, 0]
+
++    
+
++    x_strata = np.arange(len(strata_labels))
+
++    ax2b.bar(x_strata, completed_counts, width=0.55, label="Complete Data", color="#1b9e77", alpha=0.85)
+
++    ax2b.bar(x_strata, missing_counts, width=0.55, bottom=completed_counts, label="Skipped Upstream Error", color="#e7298a", alpha=0.9)
+
++    
+
++    ax2b.set_xticks(x_strata)
+
++    ax2b.set_xticklabels(strata_labels, fontsize=8)
+
++    ax2b.set_ylabel("Patient Recording Count")
+
++    ax2b.set_ylim(0, 100)
+
++    ax2b.set_title("B. Multi-Rate Strata Recording Completeness")
+
++    ax2b.legend(loc="lower right", framealpha=0.9)
+
++    ax2b.grid(axis="y", linestyle="--", alpha=0.4)
+
++    
+
++    # Panel C: Patient-Level Grouping Boundary Architecture
+
++    ax2c.axis("off")
+
++    ax2c.text(0.5, 0.95, "Patient-Level Grouping Boundary Invariant", ha="center", va="top", fontsize=11, fontweight="bold")
+
++    
+
++    box_text = (
+
++        "\n"
+
++        "  [PATIENT ENTITY: sub_XXX]\n"
+
++        "  ├── Ground-Truth Label: MSIMI-based-ecg (Fixed per patient)\n"
+
++        "  ├── Multi-Rate Strata:\n"
+
++        "  │     ├── 100 Hz Stratum (Rest, Stress, Recover) ───┐\n"
+
++        "  │     └── 500 Hz Stratum (Rest, Stress, Recover) ───┤ Co-located Fold\n"
+
++        "  └── Cross-Validation Assignment:                     │ Assignment\n"
+
++        "        ├── FOLD k (TRAIN)   <── All strata train ────┘\n"
+
++        "        └── FOLD k (VAL)     <── All strata validate (ZERO leakage)\n"
+
++        "\n"
+
++        "  [UNLABELLED HOLDOUTS: sub_005, sub_049]\n"
+
++        "  ├── Diagnosis: 'no description' (UNSPECIFIED)\n"
+
++        "  ├── Non-Imputation Policy: Strict zero-imputation\n"
+
++        "  └── Fold Assignment: fold_id = -1 (EXCLUDED from CV)"
+
++    )
+
++    ax2c.text(0.05, 0.85, box_text, ha="left", va="top", fontfamily="monospace", fontsize=8.5,
+
++              bbox=dict(boxstyle="round,pad=0.8", facecolor="#f8f9fa", edgecolor="#333333", alpha=0.95))
+
++    ax2c.set_title("C. Grouping Safeguard Architecture")
+
++    
+
++    plt.tight_layout()
+
++    fig2.savefig(figure_eligibility_path, dpi=300)
+
++    plt.close(fig2)
+
++    print(f"  [FIGURE 2 SAVED] {figure_eligibility_path.relative_to(project_root)} ({figure_eligibility_path.stat().st_size:,} bytes)")
+
++    

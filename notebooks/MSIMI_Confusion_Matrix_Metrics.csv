@@ -1,0 +1,26 @@
+Dataset,Model,TP,FP,TN,FN,Sensitivity (%),Specificity (%)
+Complete,Logistic Regression,1,11,58,8,11.11,84.06
+Complete,SVM,0,0,69,9,0.0,100.0
+Complete,Random Forest,1,5,64,8,11.11,92.75
+Complete,Kneighbors,0,0,69,9,0.0,100.0
+Complete,XGBoost,2,4,65,7,22.22,94.2
+Rest,Logistic Regression,1,12,57,8,11.11,82.61
+Rest,SVM,0,1,68,9,0.0,98.55
+Rest,Random Forest,1,4,65,8,11.11,94.2
+Rest,Kneighbors,0,0,69,9,0.0,100.0
+Rest,XGBoost,3,6,63,6,33.33,91.3
+Stress,Logistic Regression,3,21,48,6,33.33,69.57
+Stress,SVM,0,0,69,9,0.0,100.0
+Stress,Random Forest,1,7,62,8,11.11,89.86
+Stress,Kneighbors,0,1,68,9,0.0,98.55
+Stress,XGBoost,1,12,57,8,11.11,82.61
+Recover,Logistic Regression,1,18,51,8,11.11,73.91
+Recover,SVM,0,0,69,9,0.0,100.0
+Recover,Random Forest,0,8,61,9,0.0,88.41
+Recover,Kneighbors,0,0,69,9,0.0,100.0
+Recover,XGBoost,1,10,59,8,11.11,85.51
+Rest + Stress + Recover,Logistic Regression,1,14,55,8,11.11,79.71
+Rest + Stress + Recover,SVM,0,0,69,9,0.0,100.0
+Rest + Stress + Recover,Random Forest,1,1,68,8,11.11,98.55
+Rest + Stress + Recover,Kneighbors,0,0,69,9,0.0,100.0
+Rest + Stress + Recover,XGBoost,2,5,64,7,22.22,92.75

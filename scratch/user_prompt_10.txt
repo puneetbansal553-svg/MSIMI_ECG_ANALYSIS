@@ -1,0 +1,242 @@
+<USER_REQUEST>
+# TASK: Build Complete MSIMI Research Comparison Folder Inside Existing Project
+
+You are working inside my existing MSIMI ECG research project in Google Antigravity.
+
+I have already completed 11 stages of my project. Do NOT create a new project, do NOT ask me to upload files, and do NOT generate dummy data.
+
+## 1. First inspect the existing project
+
+- Explore the complete project folder and understand its structure.
+- Identify all outputs from Stage 01 to Stage 11.
+- Locate existing CSV, JSON, Excel, PNG, PDF, notebooks and research documentation.
+- Identify exact column names, phase labels, patient IDs, sampling rates, features and model metrics.
+- Read the existing research papers and references available in the project.
+- Do not modify or overwrite any existing stage output.
+
+## 2. Create a new folder
+
+Create this folder inside the existing project:
+
+`COMPARISON/`
+
+Inside it create:
+
+- `01_DATA_INVENTORY/`
+- `02_COHORT_QC_COMPARISON/`
+- `03_PREPROCESSING_COMPARISON/`
+- `04_RPEAK_HRV_COMPARISON/`
+- `05_REST_STRESS_RECOVERY/`
+- `06_TRANSITION_COMPARISON/`
+- `07_FEATURE_COMPARISON/`
+- `08_VALIDATION_COMPARISON/`
+- `09_MODEL_PERFORMANCE/`
+- `10_LITERATURE_COMPARISON/`
+- `11_FINAL_REPORT/`
+- `figures/`
+- `tables/`
+- `code/`
+
+## 3. Compare every stage with previous research
+
+For each of the 11 stages:
+
+1. Identify what our project actually performed.
+2. Extract our actual numerical results.
+3. Find relevant previous research papers from the existing references or verified published literature.
+4. Compare methodology, cohort, signal processing, features, statistical results and performance.
+5. Create a comparison CSV.
+6. Generate suitable graphs.
+7. Record paper title, authors, year, DOI and source URL.
+8. Clearly mark unavailable values as NR and non-comparable values as NOT DIRECTLY COMPARABLE.
+
+Never invent research results or paper values.
+
+## 4. REST vs STRESS vs RECOVERY — detailed comparison
+
+This is a major part of the project.
+
+Use actual patient-level and recording-level feature data.
+
+For every suitable numerical feature, compare:
+
+- REST
+- STRESS
+- RECOVERY
+
+Calculate:
+
+- Number of valid observations
+- Mean
+- Median
+- Standard deviation
+- Minimum and maximum
+- Q1 and Q3
+- IQR
+- Mode only where meaningful for discrete/categorical or low-cardinality variables
+- STRESS − REST change
+- RECOVERY − STRESS change
+- RECOVERY − REST change
+- Percentage change where mathematically meaningful
+
+Use paired patient-level analysis wherever possible.
+
+Generate:
+- REST/STRESS/RECOVERY boxplots
+- Violin plots
+- Mean with confidence interval plots
+- Median comparison plots
+- Individual patient trajectory plots
+- Paired difference plots
+- Feature-wise heatmaps
+- Sampling-rate comparison plots for 100 Hz and 500 Hz
+- Statistical significance plots, with appropriate multiple-testing correction
+
+Use paired statistical tests where appropriate. Report sample size and missing values for every comparison.
+
+Do not treat repeated recordings as independent patients.
+
+## 5. ECG and HRV feature comparisons
+
+Compare every available feature from our actual feature store, including:
+
+- ST segment features
+- ST60/ST80 features
+- QRS morphology
+- T-wave morphology
+- RR intervals
+- Heart rate
+- HRV time-domain features
+- HRV frequency-domain features
+- Autonomic features
+- Morphology transition features
+
+Create feature-wise comparison tables and graphs.
+
+Preserve actual units. Our ST measurements are ADC counts, not calibrated mV. Never label ADC values as mV.
+
+Do not treat candidate NN intervals as clinically confirmed NN intervals.
+
+## 6. Stage 07A transition analysis
+
+Compare available transitions:
+
+- REST → STRESS
+- STRESS → RECOVERY
+- RECOVERY → STRESS, only if actual data exist
+
+Generate transition-wise tables and graphs for available HRR, HRRI and morphology features.
+
+## 7. Machine learning comparison — Stage 10 and Stage 11
+
+Use actual saved model evaluation and patient prediction outputs.
+
+Compare all available models, including:
+
+- Logistic Regression
+- LDA
+- Random Forest
+- XGBoost
+- Linear SVM
+- RBF SVM
+- KNN
+
+Generate:
+
+- ROC curves
+- Precision-Recall curves
+- ROC-AUC comparison
+- Average Precision comparison
+- Accuracy comparison
+- Balanced accuracy comparison
+- Sensitivity comparison
+- Specificity comparison
+- Precision and F1 comparison
+- Confusion matrices
+- Model comparison heatmaps
+- Prediction score distributions
+- Majority-class baseline comparison
+- Confidence interval plots where supported by saved results
+
+Keep matched dual-rate and full labelled cohorts separate.
+
+Use only out-of-fold predictions for CV performance. Exclude holdouts from OOF evaluation.
+
+Do not treat five repeated CV predictions as independent new patients.
+
+Accuracy must never be shown alone because the dataset is imbalanced.
+
+## 8. Literature comparison
+
+Create a literature comparison table with:
+
+- Paper title
+- Authors
+- Publication year
+- DOI
+- Study population
+- Sample size
+- MSIMI definition
+- ECG/other modality
+- REST/STRESS/RECOVERY protocol
+- Features
+- Statistical methods
+- ML models
+- Validation method
+- Reported performance
+- Our corresponding result
+- Comparability notes
+
+Important: distinguish ECG-based MSIMI labels from PET/CT-based MSIMI labels. Do not directly compare their prevalence or model accuracy as if they were the same endpoint.
+
+## 9. Output requirements
+
+Save all generated outputs inside `COMPARISON/`.
+
+Generate:
+- High-resolution PNG figures
+- PDF figures where appropriate
+- CSV comparison tables
+- Statistical result tables
+- Literature comparison tables
+- A complete Markdown report
+- A master figure index with figure name, stage, source files and interpretation
+
+Use readable publication-quality labels, units, legends and titles.
+
+## 10. Execution and safety
+
+- Write reusable Python scripts inside `COMPARISON/code/`.
+- Execute the scripts in the existing project environment.
+- Validate every input column before analysis.
+- Log missing files and skipped analyses.
+- Do not fabricate missing values.
+- Do not overwrite any original Stage 01–11 artifact.
+- Do not rerun model training.
+- Do not alter raw ECG data.
+- Keep the comparison workflow reproducible.
+
+## 11. Final verification
+
+After execution, show:
+
+1. Number of source files inspected.
+2. Number of comparison tables generated.
+3. Number of graphs generated.
+4. Number of literature papers compared.
+5. Stages with completed comparisons.
+6. Stages where data are missing.
+7. Any statistical or scientific limitations.
+
+Start by inspecting the existing project. Then create the folder, write the scripts, run the analysis and generate the outputs. Do not stop after creating an empty folder or merely writing a plan.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-11-02T22:14:04+05:30.
+
+The user's current state is as follows:
+Active Document: /c:/Users/HP/Desktop/MSIMI_Project/notebooks/11_extended_model_benchmarking.ipynb (LANGUAGE_UNSPECIFIED)
+Cursor is on line: 12
+Other open documents:
+- c:\Users\HP\Desktop\MSIMI_Project\notebooks\11_extended_model_benchmarking.ipynb (LANGUAGE_UNSPECIFIED)
+- c:\Users\HP\Desktop\MSIMI_Project\notebooks\10_model_development_and_evaluation.ipynb (LANGUAGE_UNSPECIFIED)
+</ADDITIONAL_METADATA>

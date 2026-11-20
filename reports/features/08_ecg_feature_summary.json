@@ -1,0 +1,42 @@
+{
+  "cohort_size": 80,
+  "total_recordings": 480,
+  "valid_recordings": 464,
+  "skipped_recordings": 16,
+  "patient_strata_rows": 160,
+  "unlabelled_holdout_subjects": [
+    "sub_005",
+    "sub_049"
+  ],
+  "physical_units": {
+    "amplitude": "zero_centered_12bit_adc_counts",
+    "frobenius_distance": "adc_count_times_sqrt_samples",
+    "time": "milliseconds",
+    "heart_rate": "beats_per_minute"
+  },
+  "features": {
+    "recording_level_column_count": 243,
+    "patient_level_column_count": 264,
+    "regional_groups": {
+      "inferior": [
+        "II",
+        "III",
+        "aVF"
+      ],
+      "anterior": [
+        "V1",
+        "V2",
+        "V3",
+        "V4"
+      ],
+      "lateral": [
+        "I",
+        "aVL",
+        "V5",
+        "V6"
+      ]
+    }
+  },
+  "clinical_label_leakage": false,
+  "stage06_candidate_nn_status": "UNKNOWN"
+}

@@ -1,0 +1,35 @@
+{
+  "pipeline_stage": "07_beat_window_segmentation",
+  "specification_version": "2.1",
+  "cohort_total_recordings": 480,
+  "recordings_processed": 464,
+  "recordings_skipped_audit_error": 16,
+  "total_detected_rpeaks": 307561,
+  "total_eligible_beats": 304663,
+  "total_excluded_beats": 2898,
+  "overall_beat_eligibility_pct": 99.058,
+  "forward_overlap_beats_count": 74460,
+  "forward_overlap_pct": 24.21,
+  "backward_overlap_beats_count": 5231,
+  "backward_overlap_pct": 1.701,
+  "local_rr_continuity_beats_count": 192143,
+  "local_rr_continuity_pct": 62.473,
+  "exclusion_reason_breakdown": {
+    "NONE": 304663,
+    "V6_LEAD_DEFICIT_LIMIT": 2361,
+    "TAIL_TRUNCATION": 276,
+    "HEAD_TRUNCATION": 261
+  },
+  "window_configuration": {
+    "duration_ms": 800.0,
+    "pre_r_ms": 250.0,
+    "post_r_ms": 550.0,
+    "samples_100hz": 80,
+    "samples_500hz": 400
+  },
+  "data_governance": {
+    "candidate_nn_status": "UNKNOWN",
+    "diagnosis_labels_isolated": true,
+    "lead_synchronization": "MINIMUM_AVAILABLE_LEAD_LENGTH"
+  }
+}

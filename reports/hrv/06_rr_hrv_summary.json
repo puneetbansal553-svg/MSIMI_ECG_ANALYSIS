@@ -1,0 +1,50 @@
+{
+  "pipeline_stage": "06_rr_hrv_analysis",
+  "generation_timestamp_utc": "2026-11-01T11:51:37.541179+00:00",
+  "provenance_tag": "ALGORITHM_DETECTED_NOT_MANUALLY_VALIDATED",
+  "total_cohort_recordings": 480,
+  "successful_hrv_evaluations": 464,
+  "skipped_qc_audit_errors": 16,
+  "rhythm_lead_counts": {
+    "II": 459,
+    "NONE": 16,
+    "V5": 5
+  },
+  "composite_quality_distribution": {
+    "DEGRADED_FREQUENT_OUTLIERS": 202,
+    "USABLE_ISOLATED_OUTLIERS": 185,
+    "CLEAN_CONTINUOUS_RECORDING": 60,
+    "CONTAINS_EXTENDED_DROPOUT": 17,
+    "SKIPPED_QC_AUDIT_ERROR": 16
+  },
+  "spectral_eligibility_distribution": {
+    "INELIGIBLE_SHORT_CONTIGUOUS_SEGMENT": 318,
+    "NON_STATIONARY_EXPLORATORY": 144,
+    "SKIPPED_QC_AUDIT_ERROR": 16,
+    "SPECTRAL_ELIGIBLE": 2
+  },
+  "time_domain_distributions": {
+    "raw_detector_rr_mean_hr_bpm": {
+      "mean": 84.61506465517242,
+      "median": 79.03999999999999,
+      "std": 20.786500198267408
+    },
+    "gated_mean_hr_bpm": {
+      "mean": 83.03301724137931,
+      "median": 78.845,
+      "std": 18.58264104243563
+    },
+    "gated_rmssd_ms": {
+      "mean": 64.76613537117903,
+      "median": 64.93,
+      "std": 19.795753863583634
+    }
+  },
+  "scientific_limitations": [
+    "All fiducial markers originate from algorithmic detection without manual clinical validation.",
+    "Raw detector metrics reflect unfiltered intervals and must not be interpreted as clinical HRV.",
+    "Algorithmically screened intervals are candidate NN intervals, not confirmed normal beats.",
+    "Periodogram measures are uncalibrated exploratory outputs and not physical ms^2/Hz.",
+    "VLF is uninterpretable in 6-minute windows; Stress phase is non-stationary."
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "total_manifest_rows": 480,
+  "unique_recording_ids": 480,
+  "status_counts": {
+    "SUCCESS": 464,
+    "SKIPPED_AUDIT_ERROR": 16
+  },
+  "total_archives_on_disk": 464,
+  "pilot_mismatches": 0,
+  "pre_existing_mismatches": 0,
+  "batch4_new_archives": 133,
+  "structural_errors": 0,
+  "hr_exceptions": [],
+  "rhythm_lead_distribution": {
+    "II": 459,
+    "V5": 5
+  },
+  "fallback_count": 5,
+  "fallback_details": [
+    {
+      "recording_id": "sub_022_rest_100hz",
+      "selected_lead": "V5",
+      "rhythm_fallback_reason": "FALLBACK_TO_V5; REASONS: II:IMPLAUSIBLE_MEAN_HR_25.1",
+      "rhythm_fallback_used": true
+    },
+    {
+      "recording_id": "sub_035_stress_100hz",
+      "selected_lead": "V5",
+      "rhythm_fallback_reason": "FALLBACK_TO_V5; REASONS: II:IMPLAUSIBLE_MEAN_HR_3.2",
+      "rhythm_fallback_used": true
+    },
+    {
+      "recording_id": "sub_045_stress_500hz",
+      "selected_lead": "V5",
+      "rhythm_fallback_reason": "FALLBACK_TO_V5; REASONS: II:EXCESSIVE_IMPLAUSIBLE_RR_50.0_PCT",
+      "rhythm_fallback_used": true
+    },
+    {
+      "recording_id": "sub_057_rest_100hz",
+      "selected_lead": "V5",
+      "rhythm_fallback_reason": "FALLBACK_TO_V5; REASONS: II:IMPLAUSIBLE_MEAN_HR_26.3",
+      "rhythm_fallback_used": true
+    },
+    {
+      "recording_id": "sub_057_rest_500hz",
+      "selected_lead": "V5",
+      "rhythm_fallback_reason": "FALLBACK_TO_V5; REASONS: II:IMPLAUSIBLE_MEAN_HR_26.1",
+      "rhythm_fallback_used": true
+    }
+  ],
+  "free_disk_space_gb": 9.001602172851562
+}

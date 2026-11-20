@@ -1,0 +1,43 @@
+{
+  "pipeline_stage": "05_rpeak_detection",
+  "generation_timestamp_utc": "2026-11-01T11:47:10.079535+00:00",
+  "provenance_tag": "ALGORITHM_DETECTED_NOT_MANUALLY_VALIDATED",
+  "cohort_total_recordings": 480,
+  "batch_evaluated_recordings": 480,
+  "batch_recording_limit": 480,
+  "successfully_detected_count": 464,
+  "no_acceptable_rhythm_lead_count": 0,
+  "skipped_audit_error_count": 16,
+  "rhythm_lead_distribution": {
+    "II": 459,
+    "V5": 5
+  },
+  "fallback_used_count": 5,
+  "heart_rate_summary_bpm": {
+    "overall_mean": 84.61,
+    "overall_median": 79.05,
+    "overall_min": 52.6,
+    "overall_max": 186.9
+  },
+  "phase_mean_hr_bpm": {
+    "recover": 80.87,
+    "rest": 84.39,
+    "stress": 89.03
+  },
+  "sampling_rate_distribution": {
+    "500": 240,
+    "100": 224
+  },
+  "output_storage": {
+    "manifest_path": "reports\\rpeaks\\05_rpeak_detection_manifest.csv",
+    "archives_directory": "data\\processed\\rpeaks",
+    "total_archive_bytes": 19414029,
+    "total_archive_mb": 18.51
+  },
+  "scientific_limitations_acknowledged": [
+    "Candidate fiducial markers not manually validated against clinical ground truth",
+    "200 ms refractory blanking suppresses premature ventricular contractions (SYNTH-08)",
+    "Susceptibility to EMG burst noise immediately outside blanking window (NOISE-05)",
+    "Outlier RR intervals flagged in anomaly_stats but non-destructively preserved"
+  ]
+}

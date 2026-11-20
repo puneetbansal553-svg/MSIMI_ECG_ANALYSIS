@@ -1,0 +1,11 @@
+Experiment,Model,Accuracy (%),ROC-AUC (%)
+Baseline (85 Features),Logistic Regression,75.64,42.83
+Baseline (85 Features),SVM,88.46,61.35
+Baseline (85 Features),Random Forest,83.33,58.29
+Baseline (85 Features),Kneighbors,88.46,51.93
+Baseline (85 Features),XGBoost,85.9,53.62
+Proposed (215 Features),Logistic Regression,73.08,41.22
+Proposed (215 Features),SVM,88.46,46.38
+Proposed (215 Features),Random Forest,87.18,57.25
+Proposed (215 Features),Kneighbors,88.46,41.79
+Proposed (215 Features),XGBoost,82.05,48.63

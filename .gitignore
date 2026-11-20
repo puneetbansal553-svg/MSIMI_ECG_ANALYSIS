@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# Data and Artifacts (Raw data must never be committed)
+data/interim/*
+data/processed/*
+data/features/*
+!data/*/.gitkeep
+
+# Outputs
+outputs/figures/*
+outputs/tables/*
+outputs/models/*
+!outputs/*/.gitkeep
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

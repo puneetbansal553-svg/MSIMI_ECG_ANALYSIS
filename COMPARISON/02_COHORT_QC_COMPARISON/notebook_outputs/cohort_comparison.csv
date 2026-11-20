@@ -1,0 +1,6 @@
+Study_Name,Authors_Year,DOI,Target_Endpoint,Total_N,Positive_N,Negative_N,Prevalence_Pct,Class_Imbalance_Ratio,Diagnostic_Modality,Comparability_Status
+Our MSIMI Project (full_78),Current Project (2026),Internal Workspace,Surface ECG ST-segment depression (>0.1 mV equiv),78,9,69,11.54,1:7.67,12-lead digital ECG (100 Hz & 500 Hz),Primary Analytical Baseline
+Our MSIMI Project (matched_62),Current Project (2026),Internal Workspace,Surface ECG ST-segment depression (>0.1 mV equiv),62,7,55,11.29,1:7.86,12-lead digital ECG (Matched dual-rate subset),Matched-Rate Sensitivity Cohort
+Emory MIPS Study,"Vaccarino et al., 2021",10.1001/jama.2021.17649,SPECT MPI new/worsening perfusion defect,618,99,519,16.02,1:5.24,Nuclear SPECT MPI + ECG telemetry,NOT DIRECTLY COMPARABLE ENDPOINT (Nuclear imaging vs Surface ECG)
+Circulation Sex Differences,"Wei et al., 2014",10.1161/CIRCULATIONAHA.114.010884,SPECT MPI perfusion defect,678,105,573,15.49,1:5.46,Nuclear SPECT MPI,NOT DIRECTLY COMPARABLE ENDPOINT (Nuclear perfusion defect)
+ANOCA Microvascular Cohort,"Riaz et al., 2020",10.1161/ATVBAHA.119.313880,Invasive Coronary Microvascular Dysfunction (CFR < 2.0 / spasm),188,109,79,57.98,1:0.72,Invasive intracoronary Doppler / Ach reactivity,"EXACT POPULATION MATCH, DIFFERENT ENDPOINT (Invasive reactivity vs surface ECG)"

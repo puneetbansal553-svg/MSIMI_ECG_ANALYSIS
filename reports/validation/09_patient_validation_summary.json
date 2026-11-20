@@ -1,0 +1,319 @@
+{
+  "cohort_size": 80,
+  "eligible_subjects": 78,
+  "unlabelled_holdout_subjects": [
+    "sub_005",
+    "sub_049"
+  ],
+  "class_distribution": {
+    "positive_count": 9,
+    "negative_count": 69,
+    "unspecified_count": 2,
+    "positive_prevalence": 0.11538461538461539
+  },
+  "cross_validation_spec": {
+    "scheme": "Repeated Stratified Patient-Level K-Fold",
+    "n_splits": 5,
+    "n_repeats": 5,
+    "total_evaluation_folds": 25,
+    "random_seeds": [
+      42,
+      101,
+      2024,
+      31415,
+      99999
+    ],
+    "grouping_key": "subject_id",
+    "target_field": "MSIMI-based-ecg"
+  },
+  "leakage_audit": {
+    "subject_disjointness_passed": true,
+    "strata_colocation_passed": true,
+    "holdout_isolation_passed": true,
+    "feature_store_purity_passed": true,
+    "upstream_immutability_passed": true,
+    "all_audits_passed": true
+  },
+  "repeat_fold_distributions": {
+    "repeat_0": {
+      "seed": 42,
+      "folds": {
+        "fold_0": {
+          "val_total": 16,
+          "val_positives": 2,
+          "val_negatives": 14,
+          "val_positive_ratio": 0.125,
+          "train_total": 62,
+          "train_positives": 7,
+          "train_negatives": 55,
+          "train_positive_ratio": 0.11290322580645161
+        },
+        "fold_1": {
+          "val_total": 16,
+          "val_positives": 2,
+          "val_negatives": 14,
+          "val_positive_ratio": 0.125,
+          "train_total": 62,
+          "train_positives": 7,
+          "train_negatives": 55,
+          "train_positive_ratio": 0.11290322580645161
+        },
+        "fold_2": {
+          "val_total": 16,
+          "val_positives": 2,
+          "val_negatives": 14,
+          "val_positive_ratio": 0.125,
+          "train_total": 62,
+          "train_positives": 7,
+          "train_negatives": 55,
+          "train_positive_ratio": 0.11290322580645161
+        },
+        "fold_3": {
+          "val_total": 15,
+          "val_positives": 2,
+          "val_negatives": 13,
+          "val_positive_ratio": 0.13333333333333333,
+          "train_total": 63,
+          "train_positives": 7,
+          "train_negatives": 56,
+          "train_positive_ratio": 0.1111111111111111
+        },
+        "fold_4": {
+          "val_total": 15,
+          "val_positives": 1,
+          "val_negatives": 14,
+          "val_positive_ratio": 0.06666666666666667,
+          "train_total": 63,
+          "train_positives": 8,
+          "train_negatives": 55,
+          "train_positive_ratio": 0.12698412698412698
+        }
+      }
+    },
+    "repeat_1": {
+      "seed": 101,
+      "folds": {
+        "fold_0": {
+          "val_total": 16,
+          "val_positives": 2,
+          "val_negatives": 14,
+          "val_positive_ratio": 0.125,
+          "train_total": 62,
+          "train_positives": 7,
+          "train_negatives": 55,
+          "train_positive_ratio": 0.11290322580645161
+        },
+        "fold_1": {
+          "val_total": 16,
+          "val_positives": 2,
+          "val_negatives": 14,
+          "val_positive_ratio": 0.125,
+          "train_total": 62,
+          "train_positives": 7,
+          "train_negatives": 55,
+          "train_positive_ratio": 0.11290322580645161
+        },
+        "fold_2": {
+          "val_total": 16,
+          "val_positives": 2,
+          "val_negatives": 14,
+          "val_positive_ratio": 0.125,
+          "train_total": 62,
+          "train_positives": 7,
+          "train_negatives": 55,
+          "train_positive_ratio": 0.11290322580645161
+        },
+        "fold_3": {
+          "val_total": 15,
+          "val_positives": 2,
+          "val_negatives": 13,
+          "val_positive_ratio": 0.13333333333333333,
+          "train_total": 63,
+          "train_positives": 7,
+          "train_negatives": 56,
+          "train_positive_ratio": 0.1111111111111111
+        },
+        "fold_4": {
+          "val_total": 15,
+          "val_positives": 1,
+          "val_negatives": 14,
+          "val_positive_ratio": 0.06666666666666667,
+          "train_total": 63,
+          "train_positives": 8,
+          "train_negatives": 55,
+          "train_positive_ratio": 0.12698412698412698
+        }
+      }
+    },
+    "repeat_2": {
+      "seed": 2024,
+      "folds": {
+        "fold_0": {
+          "val_total": 16,
+          "val_positives": 2,
+          "val_negatives": 14,
+          "val_positive_ratio": 0.125,
+          "train_total": 62,
+          "train_positives": 7,
+          "train_negatives": 55,
+          "train_positive_ratio": 0.11290322580645161
+        },
+        "fold_1": {
+          "val_total": 16,
+          "val_positives": 2,
+          "val_negatives": 14,
+          "val_positive_ratio": 0.125,
+          "train_total": 62,
+          "train_positives": 7,
+          "train_negatives": 55,
+          "train_positive_ratio": 0.11290322580645161
+        },
+        "fold_2": {
+          "val_total": 16,
+          "val_positives": 2,
+          "val_negatives": 14,
+          "val_positive_ratio": 0.125,
+          "train_total": 62,
+          "train_positives": 7,
+          "train_negatives": 55,
+          "train_positive_ratio": 0.11290322580645161
+        },
+        "fold_3": {
+          "val_total": 15,
+          "val_positives": 2,
+          "val_negatives": 13,
+          "val_positive_ratio": 0.13333333333333333,
+          "train_total": 63,
+          "train_positives": 7,
+          "train_negatives": 56,
+          "train_positive_ratio": 0.1111111111111111
+        },
+        "fold_4": {
+          "val_total": 15,
+          "val_positives": 1,
+          "val_negatives": 14,
+          "val_positive_ratio": 0.06666666666666667,
+          "train_total": 63,
+          "train_positives": 8,
+          "train_negatives": 55,
+          "train_positive_ratio": 0.12698412698412698
+        }
+      }
+    },
+    "repeat_3": {
+      "seed": 31415,
+      "folds": {
+        "fold_0": {
+          "val_total": 16,
+          "val_positives": 2,
+          "val_negatives": 14,
+          "val_positive_ratio": 0.125,
+          "train_total": 62,
+          "train_positives": 7,
+          "train_negatives": 55,
+          "train_positive_ratio": 0.11290322580645161
+        },
+        "fold_1": {
+          "val_total": 16,
+          "val_positives": 2,
+          "val_negatives": 14,
+          "val_positive_ratio": 0.125,
+          "train_total": 62,
+          "train_positives": 7,
+          "train_negatives": 55,
+          "train_positive_ratio": 0.11290322580645161
+        },
+        "fold_2": {
+          "val_total": 16,
+          "val_positives": 2,
+          "val_negatives": 14,
+          "val_positive_ratio": 0.125,
+          "train_total": 62,
+          "train_positives": 7,
+          "train_negatives": 55,
+          "train_positive_ratio": 0.11290322580645161
+        },
+        "fold_3": {
+          "val_total": 15,
+          "val_positives": 2,
+          "val_negatives": 13,
+          "val_positive_ratio": 0.13333333333333333,
+          "train_total": 63,
+          "train_positives": 7,
+          "train_negatives": 56,
+          "train_positive_ratio": 0.1111111111111111
+        },
+        "fold_4": {
+          "val_total": 15,
+          "val_positives": 1,
+          "val_negatives": 14,
+          "val_positive_ratio": 0.06666666666666667,
+          "train_total": 63,
+          "train_positives": 8,
+          "train_negatives": 55,
+          "train_positive_ratio": 0.12698412698412698
+        }
+      }
+    },
+    "repeat_4": {
+      "seed": 99999,
+      "folds": {
+        "fold_0": {
+          "val_total": 16,
+          "val_positives": 2,
+          "val_negatives": 14,
+          "val_positive_ratio": 0.125,
+          "train_total": 62,
+          "train_positives": 7,
+          "train_negatives": 55,
+          "train_positive_ratio": 0.11290322580645161
+        },
+        "fold_1": {
+          "val_total": 16,
+          "val_positives": 2,
+          "val_negatives": 14,
+          "val_positive_ratio": 0.125,
+          "train_total": 62,
+          "train_positives": 7,
+          "train_negatives": 55,
+          "train_positive_ratio": 0.11290322580645161
+        },
+        "fold_2": {
+          "val_total": 16,
+          "val_positives": 2,
+          "val_negatives": 14,
+          "val_positive_ratio": 0.125,
+          "train_total": 62,
+          "train_positives": 7,
+          "train_negatives": 55,
+          "train_positive_ratio": 0.11290322580645161
+        },
+        "fold_3": {
+          "val_total": 15,
+          "val_positives": 2,
+          "val_negatives": 13,
+          "val_positive_ratio": 0.13333333333333333,
+          "train_total": 63,
+          "train_positives": 7,
+          "train_negatives": 56,
+          "train_positive_ratio": 0.1111111111111111
+        },
+        "fold_4": {
+          "val_total": 15,
+          "val_positives": 1,
+          "val_negatives": 14,
+          "val_positive_ratio": 0.06666666666666667,
+          "train_total": 63,
+          "train_positives": 8,
+          "train_negatives": 55,
+          "train_positive_ratio": 0.12698412698412698
+        }
+      }
+    }
+  },
+  "checksums": {
+    "patient_validation_splits_csv_sha256": "c4432657e96205bbe6002c6a0a105fd49ec345a298b1dd5832ff0118b2765453",
+    "upstream_stage08_patient_csv_sha256": "857d622e285f4ce35d5fcba1c526ae0214afb42e7f780b3722a4e395026f3194",
+    "upstream_stage08_recording_csv_sha256": "137d19dc9442fd919e5ec76698f8dc896c8fcae8ce911e6f5086c38045a484a9"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "pipeline_stage": "07a_inter_phase_transition_analysis",
+  "specification_version": "2.0",
+  "cohort_total_subjects": 80,
+  "transitions_evaluated": {
+    "T1_REST_TO_STRESS": {
+      "total_pairs": 144,
+      "pairs_100hz": 64,
+      "pairs_500hz": 80,
+      "mean_delta_hr_bpm": 4.53,
+      "median_delta_hr_bpm": 3.52,
+      "mean_frobenius_dissimilarity_mv": 1114.7564
+    },
+    "T2_STRESS_TO_RECOVERY": {
+      "total_pairs": 144,
+      "pairs_100hz": 64,
+      "pairs_500hz": 80,
+      "mean_delta_hr_bpm": -8.5,
+      "median_hrr60_bpm": 1.5,
+      "mean_frobenius_dissimilarity_mv": 880.7342
+    },
+    "T3_RECOVERY_TO_STRESS": {
+      "total_pairs": 0,
+      "status": "PROTOCOL_NOT_APPLICABLE",
+      "reason": "Single challenge protocol; no repeated stress exposure present in cohort."
+    }
+  },
+  "data_governance": {
+    "candidate_nn_status": "UNKNOWN",
+    "diagnosis_labels_isolated": true,
+    "methodological_refinements_applied": true
+  }
+}

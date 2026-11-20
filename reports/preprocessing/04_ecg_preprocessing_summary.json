@@ -1,0 +1,23 @@
+{
+  "cohort_size": 80,
+  "total_cohort_recordings": 480,
+  "preprocessed_success_count": 464,
+  "skipped_audit_error_count": 16,
+  "preprocessing_error_count": 0,
+  "provenance_breakdown": {
+    "ARCHIVE_INTEGRITY_VERIFIED_PARAMETERS_INFERRED": 349,
+    "PREPROCESSING_PROVENANCE_VERIFIED": 115,
+    "SKIPPED_AUDIT_ERROR": 16
+  },
+  "storage_format": "compressed_npz_float32",
+  "total_compressed_bytes_written": 3018749114,
+  "filters": {
+    "type": "Zero-Phase Butterworth SOS (sosfiltfilt)",
+    "highpass_hz": 0.5,
+    "lowpass_hz": 45.0,
+    "notch_hz_at_500": 50.0,
+    "notch_bandwidth_hz": 1.67,
+    "edge_exclusion_sec": "NOT_ESTABLISHED"
+  },
+  "manifest_path": "reports\\preprocessing\\04_ecg_preprocessing_manifest.csv"
+}

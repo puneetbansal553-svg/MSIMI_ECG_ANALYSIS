@@ -1,0 +1,26 @@
+Dataset,Model,ROC-AUC (%),Accuracy (%)
+Complete,Logistic Regression,46.94,80.77
+Complete,SVM,58.21,88.46
+Complete,Random Forest,51.93,83.33
+Complete,Kneighbors,44.93,88.46
+Complete,XGBoost,53.62,85.9
+Rest,Logistic Regression,40.34,78.21
+Rest,SVM,55.64,88.46
+Rest,Random Forest,53.62,85.9
+Rest,Kneighbors,49.03,88.46
+Rest,XGBoost,73.03,84.62
+Stress,Logistic Regression,48.07,76.92
+Stress,SVM,59.98,88.46
+Stress,Random Forest,43.24,80.77
+Stress,Kneighbors,40.74,87.18
+Stress,XGBoost,46.54,74.36
+Recover,Logistic Regression,46.14,74.36
+Recover,SVM,51.29,88.46
+Recover,Random Forest,35.19,80.77
+Recover,Kneighbors,40.58,88.46
+Recover,XGBoost,35.43,76.92
+Rest + Stress + Recover,Logistic Regression,46.78,78.21
+Rest + Stress + Recover,SVM,59.02,88.46
+Rest + Stress + Recover,Random Forest,44.69,87.18
+Rest + Stress + Recover,Kneighbors,45.65,88.46
+Rest + Stress + Recover,XGBoost,60.14,84.62

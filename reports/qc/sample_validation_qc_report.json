@@ -1,0 +1,1200 @@
+{
+  "sample_cohort": [
+    "sub_001",
+    "sub_002",
+    "sub_005",
+    "sub_029",
+    "sub_054"
+  ],
+  "total_recordings_validated": 30,
+  "parameters": {
+    "adc_offset": 2048.0,
+    "filter_params": {
+      "highpass_hz": 0.5,
+      "lowpass_hz": 45.0,
+      "notch_hz": 50.0,
+      "notch_q": 30.0
+    },
+    "rpeak_params": {
+      "bandpass_low_hz": 5.0,
+      "bandpass_high_hz": 15.0,
+      "refractory_ms": 200.0,
+      "min_rr_ms": 300.0,
+      "max_rr_ms": 2000.0,
+      "searchback_rr_factor": 1.66
+    },
+    "clinical_status": "Proposed research parameters; not clinically validated."
+  },
+  "findings": {
+    "lead_count_all_12": true,
+    "finite_values_all": true,
+    "flatlines_detected": [],
+    "irregular_duration_recordings": [
+      "sub_002_rest_500hz",
+      "sub_005_rest_500hz",
+      "sub_029_rest_100hz",
+      "sub_029_rest_500hz",
+      "sub_054_recover_100hz",
+      "sub_054_recover_500hz"
+    ],
+    "unequal_lead_length_recordings": [
+      "sub_002_rest_500hz",
+      "sub_005_rest_500hz",
+      "sub_029_rest_100hz",
+      "sub_029_rest_500hz"
+    ],
+    "mean_clipping_pct": 0.0
+  },
+  "detailed_results": {
+    "sub_001": {
+      "rest_100hz": {
+        "integrity": {
+          "recording_id": "sub_001_rest_100hz",
+          "subject_id": "sub_001",
+          "phase": "rest",
+          "sampling_rate": 100,
+          "lead_count": 12,
+          "lead_count_valid": true,
+          "duration_sec": 360.0,
+          "expected_duration_sec": 360.0,
+          "is_duration_irregular": false,
+          "has_unequal_lead_lengths": false,
+          "unequal_lead_lengths_detail": "None",
+          "nan_count": 0,
+          "inf_count": 0,
+          "all_finite": true,
+          "flatline_leads": "None",
+          "clipping_pct": 0.0,
+          "min_adc_val": 1512.0,
+          "max_adc_val": 2904.0,
+          "mean_adc_val": 2048.49
+        },
+        "lead_ii_qc": {
+          "lead_name": "II",
+          "clipping_pct": 0.0,
+          "raw_std": 70.06,
+          "filtered_std": 65.33,
+          "estimated_snr_db": 10.78,
+          "is_flatline": false,
+          "quality_rating": "EXCELLENT"
+        },
+        "lead_ii_rpeaks": {
+          "count": 519,
+          "mean_hr_bpm": 86.4,
+          "median_rr_ms": 690.0,
+          "implausible_rr_pct": 0.0
+        }
+      },
+      "rest_500hz": {
+        "integrity": {
+          "recording_id": "sub_001_rest_500hz",
+          "subject_id": "sub_001",
+          "phase": "rest",
+          "sampling_rate": 500,
+          "lead_count": 12,
+          "lead_count_valid": true,
+          "duration_sec": 360.0,
+          "expected_duration_sec": 360.0,
+          "is_duration_irregular": false,
+          "has_unequal_lead_lengths": false,
+          "unequal_lead_lengths_detail": "None",
+          "nan_count": 0,
+          "inf_count": 0,
+          "all_finite": true,
+          "flatline_leads": "None",
+          "clipping_pct": 0.0,
+          "min_adc_val": 1616.0,
+          "max_adc_val": 2703.0,
+          "mean_adc_val": 2048.59
+        },
+        "lead_ii_qc": {
+          "lead_name": "II",
+          "clipping_pct": 0.0,
+          "raw_std": 57.31,
+          "filtered_std": 50.35,
+          "estimated_snr_db": 7.4,
+          "is_flatline": false,
+          "quality_rating": "EXCELLENT"
+        },
+        "lead_ii_rpeaks": {
+          "count": 520,
+          "mean_hr_bpm": 86.6,
+          "median_rr_ms": 688.0,
+          "implausible_rr_pct": 0.19
+        }
+      },
+      "stress_100hz": {
+        "integrity": {
+          "recording_id": "sub_001_stress_100hz",
+          "subject_id": "sub_001",
+          "phase": "stress",
+          "sampling_rate": 100,
+          "lead_count": 12,
+          "lead_count_valid": true,
+          "duration_sec": 720.0,
+          "expected_duration_sec": 720.0,
+          "is_duration_irregular": false,
+          "has_unequal_lead_lengths": false,
+          "unequal_lead_lengths_detail": "None",
+          "nan_count": 0,
+          "inf_count": 0,
+          "all_finite": true,
+          "flatline_leads": "None",
+          "clipping_pct": 0.0,
+          "min_adc_val": 1464.0,
+          "max_adc_val": 2824.0,
+          "mean_adc_val": 2048.68
+        },
+        "lead_ii_qc": {
+          "lead_name": "II",
+          "clipping_pct": 0.0,
+          "raw_std": 59.3,
+          "filtered_std": 55.06,
+          "estimated_snr_db": 10.86,
+          "is_flatline": false,
+          "quality_rating": "EXCELLENT"
+        },
+        "lead_ii_rpeaks": {
+          "count": 798,
+          "mean_hr_bpm": 66.5,
+          "median_rr_ms": 880.0,
+          "implausible_rr_pct": 0.0
+        }
+      },
+      "stress_500hz": {
+        "integrity": {
+          "recording_id": "sub_001_stress_500hz",
+          "subject_id": "sub_001",
+          "phase": "stress",
+          "sampling_rate": 500,
+          "lead_count": 12,
+          "lead_count_valid": true,
+          "duration_sec": 720.0,
+          "expected_duration_sec": 720.0,
+          "is_duration_irregular": false,
+          "has_unequal_lead_lengths": false,
+          "unequal_lead_lengths_detail": "None",
+          "nan_count": 0,
+          "inf_count": 0,
+          "all_finite": true,
+          "flatline_leads": "None",
+          "clipping_pct": 0.0,
+          "min_adc_val": 1560.0,
+          "max_adc_val": 2646.0,
+          "mean_adc_val": 2048.83
+        },
+        "lead_ii_qc": {
+          "lead_name": "II",
+          "clipping_pct": 0.0,
+          "raw_std": 48.9,
+          "filtered_std": 42.27,
+          "estimated_snr_db": 7.25,
+          "is_flatline": false,
+          "quality_rating": "EXCELLENT"
+        },
+        "lead_ii_rpeaks": {
+          "count": 798,
+          "mean_hr_bpm": 66.5,
+          "median_rr_ms": 888.0,
+          "implausible_rr_pct": 0.0
+        }
+      },
+      "recover_100hz": {
+        "integrity": {
+          "recording_id": "sub_001_recover_100hz",
+          "subject_id": "sub_001",
+          "phase": "recover",
+          "sampling_rate": 100,
+          "lead_count": 12,
+          "lead_count_valid": true,
+          "duration_sec": 360.0,
+          "expected_duration_sec": 360.0,
+          "is_duration_irregular": false,
+          "has_unequal_lead_lengths": false,
+          "unequal_lead_lengths_detail": "None",
+          "nan_count": 0,
+          "inf_count": 0,
+          "all_finite": true,
+          "flatline_leads": "None",
+          "clipping_pct": 0.0,
+          "min_adc_val": 1608.0,
+          "max_adc_val": 2808.0,
+          "mean_adc_val": 2048.74
+        },
+        "lead_ii_qc": {
+          "lead_name": "II",
+          "clipping_pct": 0.0,
+          "raw_std": 59.02,
+          "filtered_std": 55.33,
+          "estimated_snr_db": 11.91,
+          "is_flatline": false,
+          "quality_rating": "EXCELLENT"
+        },
+        "lead_ii_rpeaks": {
+          "count": 422,
+          "mean_hr_bpm": 70.3,
+          "median_rr_ms": 860.0,
+          "implausible_rr_pct": 0.0
+        }
+      },
+      "recover_500hz": {
+        "integrity": {
+          "recording_id": "sub_001_recover_500hz",
+          "subject_id": "sub_001",
+          "phase": "recover",
+          "sampling_rate": 500,
+          "lead_count": 12,
+          "lead_count_valid": true,
+          "duration_sec": 360.0,
+          "expected_duration_sec": 360.0,
+          "is_duration_irregular": false,
+          "has_unequal_lead_lengths": false,
+          "unequal_lead_lengths_detail": "None",
+          "nan_count": 0,
+          "inf_count": 0,
+          "all_finite": true,
+          "flatline_leads": "None",
+          "clipping_pct": 0.0,
+          "min_adc_val": 1697.0,
+          "max_adc_val": 2676.0,
+          "mean_adc_val": 2048.9
+        },
+        "lead_ii_qc": {
+          "lead_name": "II",
+          "clipping_pct": 0.0,
+          "raw_std": 48.71,
+          "filtered_std": 42.56,
+          "estimated_snr_db": 8.07,
+          "is_flatline": false,
+          "quality_rating": "EXCELLENT"
+        },
+        "lead_ii_rpeaks": {
+          "count": 424,
+          "mean_hr_bpm": 70.6,
+          "median_rr_ms": 860.0,
+          "implausible_rr_pct": 0.0
+        }
+      }
+    },
+    "sub_002": {
+      "rest_100hz": {
+        "integrity": {
+          "recording_id": "sub_002_rest_100hz",
+          "subject_id": "sub_002",
+          "phase": "rest",
+          "sampling_rate": 100,
+          "lead_count": 12,
+          "lead_count_valid": true,
+          "duration_sec": 360.0,
+          "expected_duration_sec": 360.0,
+          "is_duration_irregular": false,
+          "has_unequal_lead_lengths": false,
+          "unequal_lead_lengths_detail": "None",
+          "nan_count": 0,
+          "inf_count": 0,
+          "all_finite": true,
+          "flatline_leads": "None",
+          "clipping_pct": 0.0,
+          "min_adc_val": 1024.0,
+          "max_adc_val": 3064.0,
+          "mean_adc_val": 2048.84
+        },
+        "lead_ii_qc": {
+          "lead_name": "II",
+          "clipping_pct": 0.0,
+          "raw_std": 59.3,
+          "filtered_std": 30.03,
+          "estimated_snr_db": -4.28,
+          "is_flatline": false,
+          "quality_rating": "NOISY"
+        },
+        "lead_ii_rpeaks": {
+          "count": 470,
+          "mean_hr_bpm": 78.4,
+          "median_rr_ms": 760.0,
+          "implausible_rr_pct": 0.64
+        }
+      },
+      "rest_500hz": {
+        "integrity": {
+          "recording_id": "sub_002_rest_500hz",
+          "subject_id": "sub_002",
+          "phase": "rest",
+          "sampling_rate": 500,
+          "lead_count": 12,
+          "lead_count_valid": true,
+          "duration_sec": 339.16,
+          "expected_duration_sec": 360.0,
+          "is_duration_irregular": true,
+          "has_unequal_lead_lengths": true,
+          "unequal_lead_lengths_detail": "[169581, 180000]",
+          "nan_count": 0,
+          "inf_count": 0,
+          "all_finite": true,
+          "flatline_leads": "None",
+          "clipping_pct": 0.0,
+          "min_adc_val": 1.983,
+          "max_adc_val": 3063.0,
+          "mean_adc_val": 2048.99
+        },
+        "lead_ii_qc": {
+          "lead_name": "II",
+          "clipping_pct": 0.0,
+          "raw_std": 57.05,
+          "filtered_std": 23.73,
+          "estimated_snr_db": -6.44,
+          "is_flatline": false,
+          "quality_rating": "NOISY"
+        },
+        "lead_ii_rpeaks": {
+          "count": 820,
+          "mean_hr_bpm": 136.7,
+          "median_rr_ms": 354.0,
+          "implausible_rr_pct": 38.46
+        }
+      },
+      "stress_100hz": {
+        "integrity": {
+          "recording_id": "sub_002_stress_100hz",
+          "subject_id": "sub_002",
+          "phase": "stress",
+          "sampling_rate": 100,
+          "lead_count": 12,
+          "lead_count_valid": true,
+          "duration_sec": 720.0,
+          "expected_duration_sec": 720.0,
+          "is_duration_irregular": false,
+          "has_unequal_lead_lengths": false,
+          "unequal_lead_lengths_detail": "None",
+          "nan_count": 0,
+          "inf_count": 0,
+          "all_finite": true,
+          "flatline_leads": "None",
+          "clipping_pct": 0.0,
+          "min_adc_val": 1704.0,
+          "max_adc_val": 3064.0,
+          "mean_adc_val": 2049.03
+        },
+        "lead_ii_qc": {
+          "lead_name": "II",
+          "clipping_pct": 0.0,
+          "raw_std": 30.85,
+          "filtered_std": 26.99,
+          "estimated_snr_db": 7.35,
+          "is_flatline": false,
+          "quality_rating": "EXCELLENT"
+        },
+        "lead_ii_rpeaks": {
+          "count": 984,
+          "mean_hr_bpm": 82.0,
+          "median_rr_ms": 790.0,
+          "implausible_rr_pct": 9.26
+        }
+      },
+      "stress_500hz": {
+        "integrity": {
+          "recording_id": "sub_002_stress_500hz",
+          "subject_id": "sub_002",
+          "phase": "stress",
+          "sampling_rate": 500,
+          "lead_count": 12,
+          "lead_count_valid": true,
+          "duration_sec": 720.0,
+          "expected_duration_sec": 720.0,
+          "is_duration_irregular": false,
+          "has_unequal_lead_lengths": false,
+          "unequal_lead_lengths_detail": "None",
+          "nan_count": 0,
+          "inf_count": 0,
+          "all_finite": true,
+          "flatline_leads": "None",
+          "clipping_pct": 0.0,
+          "min_adc_val": 1744.0,
+          "max_adc_val": 2987.0,
+          "mean_adc_val": 2049.24
+        },
+        "lead_ii_qc": {
+          "lead_name": "II",
+          "clipping_pct": 0.0,
+          "raw_std": 27.06,
+          "filtered_std": 20.85,
+          "estimated_snr_db": 4.23,
+          "is_flatline": false,
+          "quality_rating": "ACCEPTABLE"
+        },
+        "lead_ii_rpeaks": {
+          "count": 999,
+          "mean_hr_bpm": 83.2,
+          "median_rr_ms": 776.0,
+          "implausible_rr_pct": 8.42
+        }
+      },
+      "recover_100hz": {
+        "integrity": {
+          "recording_id": "sub_002_recover_100hz",
+          "subject_id": "sub_002",
+          "phase": "recover",
+          "sampling_rate": 100,
+          "lead_count": 12,
+          "lead_count_valid": true,
+          "duration_sec": 360.0,
+          "expected_duration_sec": 360.0,
+          "is_duration_irregular": false,
+          "has_unequal_lead_lengths": false,
+          "unequal_lead_lengths_detail": "None",
+          "nan_count": 0,
+          "inf_count": 0,
+          "all_finite": true,
+          "flatline_leads": "None",
+          "clipping_pct": 0.0,
+          "min_adc_val": 1720.0,
+          "max_adc_val": 3064.0,
+          "mean_adc_val": 2049.18
+        },
+        "lead_ii_qc": {
+          "lead_name": "II",
+          "clipping_pct": 0.0,
+          "raw_std": 30.33,
+          "filtered_std": 26.57,
+          "estimated_snr_db": 7.77,
+          "is_flatline": false,
+          "quality_rating": "EXCELLENT"
+        },
+        "lead_ii_rpeaks": {
+          "count": 514,
+          "mean_hr_bpm": 85.7,
+          "median_rr_ms": 840.0,
+          "implausible_rr_pct": 9.94
+        }
+      },
+      "recover_500hz": {
+        "integrity": {
+          "recording_id": "sub_002_recover_500hz",
+          "subject_id": "sub_002",
+          "phase": "recover",
+          "sampling_rate": 500,
+          "lead_count": 12,
+          "lead_count_valid": true,
+          "duration_sec": 360.0,
+          "expected_duration_sec": 360.0,
+          "is_duration_irregular": false,
+          "has_unequal_lead_lengths": false,
+          "unequal_lead_lengths_detail": "None",
+          "nan_count": 0,
+          "inf_count": 0,
+          "all_finite": true,
+          "flatline_leads": "None",
+          "clipping_pct": 0.0,
+          "min_adc_val": 1742.0,
+          "max_adc_val": 2961.0,
+          "mean_adc_val": 2049.4
+        },
+        "lead_ii_qc": {
+          "lead_name": "II",
+          "clipping_pct": 0.0,
+          "raw_std": 26.7,
+          "filtered_std": 20.62,
+          "estimated_snr_db": 4.48,
+          "is_flatline": false,
+          "quality_rating": "ACCEPTABLE"
+        },
+        "lead_ii_rpeaks": {
+          "count": 436,
+          "mean_hr_bpm": 72.7,
+          "median_rr_ms": 866.0,
+          "implausible_rr_pct": 2.99
+        }
+      }
+    },
+    "sub_005": {
+      "rest_100hz": {
+        "integrity": {
+          "recording_id": "sub_005_rest_100hz",
+          "subject_id": "sub_005",
+          "phase": "rest",
+          "sampling_rate": 100,
+          "lead_count": 12,
+          "lead_count_valid": true,
+          "duration_sec": 360.0,
+          "expected_duration_sec": 360.0,
+          "is_duration_irregular": false,
+          "has_unequal_lead_lengths": false,
+          "unequal_lead_lengths_detail": "None",
+          "nan_count": 0,
+          "inf_count": 0,
+          "all_finite": true,
+          "flatline_leads": "None",
+          "clipping_pct": 0.0,
+          "min_adc_val": 1336.0,
+          "max_adc_val": 2672.0,
+          "mean_adc_val": 2048.44
+        },
+        "lead_ii_qc": {
+          "lead_name": "II",
+          "clipping_pct": 0.0,
+          "raw_std": 33.87,
+          "filtered_std": 28.29,
+          "estimated_snr_db": 5.0,
+          "is_flatline": false,
+          "quality_rating": "ACCEPTABLE"
+        },
+        "lead_ii_rpeaks": {
+          "count": 429,
+          "mean_hr_bpm": 71.5,
+          "median_rr_ms": 840.0,
+          "implausible_rr_pct": 0.47
+        }
+      },
+      "rest_500hz": {
+        "integrity": {
+          "recording_id": "sub_005_rest_500hz",
+          "subject_id": "sub_005",
+          "phase": "rest",
+          "sampling_rate": 500,
+          "lead_count": 12,
+          "lead_count_valid": true,
+          "duration_sec": 339.16,
+          "expected_duration_sec": 360.0,
+          "is_duration_irregular": true,
+          "has_unequal_lead_lengths": true,
+          "unequal_lead_lengths_detail": "[169581, 180000]",
+          "nan_count": 0,
+          "inf_count": 0,
+          "all_finite": true,
+          "flatline_leads": "None",
+          "clipping_pct": 0.0,
+          "min_adc_val": 2.026,
+          "max_adc_val": 2527.0,
+          "mean_adc_val": 2048.49
+        },
+        "lead_ii_qc": {
+          "lead_name": "II",
+          "clipping_pct": 0.0,
+          "raw_std": 30.09,
+          "filtered_std": 22.96,
+          "estimated_snr_db": 2.7,
+          "is_flatline": false,
+          "quality_rating": "ACCEPTABLE"
+        },
+        "lead_ii_rpeaks": {
+          "count": 434,
+          "mean_hr_bpm": 72.4,
+          "median_rr_ms": 842.0,
+          "implausible_rr_pct": 1.39
+        }
+      },
+      "stress_100hz": {
+        "integrity": {
+          "recording_id": "sub_005_stress_100hz",
+          "subject_id": "sub_005",
+          "phase": "stress",
+          "sampling_rate": 100,
+          "lead_count": 12,
+          "lead_count_valid": true,
+          "duration_sec": 720.0,
+          "expected_duration_sec": 720.0,
+          "is_duration_irregular": false,
+          "has_unequal_lead_lengths": false,
+          "unequal_lead_lengths_detail": "None",
+          "nan_count": 0,
+          "inf_count": 0,
+          "all_finite": true,
+          "flatline_leads": "None",
+          "clipping_pct": 0.0,
+          "min_adc_val": 1024.0,
+          "max_adc_val": 3064.0,
+          "mean_adc_val": 2048.2
+        },
+        "lead_ii_qc": {
+          "lead_name": "II",
+          "clipping_pct": 0.0,
+          "raw_std": 61.17,
+          "filtered_std": 30.75,
+          "estimated_snr_db": -4.38,
+          "is_flatline": false,
+          "quality_rating": "NOISY"
+        },
+        "lead_ii_rpeaks": {
+          "count": 923,
+          "mean_hr_bpm": 76.9,
+          "median_rr_ms": 780.0,
+          "implausible_rr_pct": 0.65
+        }
+      },
+      "stress_500hz": {
+        "integrity": {
+          "recording_id": "sub_005_stress_500hz",
+          "subject_id": "sub_005",
+          "phase": "stress",
+          "sampling_rate": 500,
+          "lead_count": 12,
+          "lead_count_valid": true,
+          "duration_sec": 720.0,
+          "expected_duration_sec": 720.0,
+          "is_duration_irregular": false,
+          "has_unequal_lead_lengths": false,
+          "unequal_lead_lengths_detail": "None",
+          "nan_count": 0,
+          "inf_count": 0,
+          "all_finite": true,
+          "flatline_leads": "None",
+          "clipping_pct": 0.0,
+          "min_adc_val": 1024.0,
+          "max_adc_val": 3064.0,
+          "mean_adc_val": 2048.23
+        },
+        "lead_ii_qc": {
+          "lead_name": "II",
+          "clipping_pct": 0.0,
+          "raw_std": 58.96,
+          "filtered_std": 25.01,
+          "estimated_snr_db": -6.3,
+          "is_flatline": false,
+          "quality_rating": "NOISY"
+        },
+        "lead_ii_rpeaks": {
+          "count": 932,
+          "mean_hr_bpm": 77.7,
+          "median_rr_ms": 776.0,
+          "implausible_rr_pct": 1.29
+        }
+      },
+      "recover_100hz": {
+        "integrity": {
+          "recording_id": "sub_005_recover_100hz",
+          "subject_id": "sub_005",
+          "phase": "recover",
+          "sampling_rate": 100,
+          "lead_count": 12,
+          "lead_count_valid": true,
+          "duration_sec": 360.0,
+          "expected_duration_sec": 360.0,
+          "is_duration_irregular": false,
+          "has_unequal_lead_lengths": false,
+          "unequal_lead_lengths_detail": "None",
+          "nan_count": 0,
+          "inf_count": 0,
+          "all_finite": true,
+          "flatline_leads": "None",
+          "clipping_pct": 0.0,
+          "min_adc_val": 1512.0,
+          "max_adc_val": 2496.0,
+          "mean_adc_val": 2048.47
+        },
+        "lead_ii_qc": {
+          "lead_name": "II",
+          "clipping_pct": 0.0,
+          "raw_std": 29.18,
+          "filtered_std": 26.33,
+          "estimated_snr_db": 9.11,
+          "is_flatline": false,
+          "quality_rating": "EXCELLENT"
+        },
+        "lead_ii_rpeaks": {
+          "count": 433,
+          "mean_hr_bpm": 72.1,
+          "median_rr_ms": 830.0,
+          "implausible_rr_pct": 0.0
+        }
+      },
+      "recover_500hz": {
+        "integrity": {
+          "recording_id": "sub_005_recover_500hz",
+          "subject_id": "sub_005",
+          "phase": "recover",
+          "sampling_rate": 500,
+          "lead_count": 12,
+          "lead_count_valid": true,
+          "duration_sec": 360.0,
+          "expected_duration_sec": 360.0,
+          "is_duration_irregular": false,
+          "has_unequal_lead_lengths": false,
+          "unequal_lead_lengths_detail": "None",
+          "nan_count": 0,
+          "inf_count": 0,
+          "all_finite": true,
+          "flatline_leads": "None",
+          "clipping_pct": 0.0,
+          "min_adc_val": 1654.0,
+          "max_adc_val": 2396.0,
+          "mean_adc_val": 2048.54
+        },
+        "lead_ii_qc": {
+          "lead_name": "II",
+          "clipping_pct": 0.0,
+          "raw_std": 25.52,
+          "filtered_std": 21.41,
+          "estimated_snr_db": 6.16,
+          "is_flatline": false,
+          "quality_rating": "EXCELLENT"
+        },
+        "lead_ii_rpeaks": {
+          "count": 434,
+          "mean_hr_bpm": 72.3,
+          "median_rr_ms": 830.0,
+          "implausible_rr_pct": 0.23
+        }
+      }
+    },
+    "sub_029": {
+      "rest_100hz": {
+        "integrity": {
+          "recording_id": "sub_029_rest_100hz",
+          "subject_id": "sub_029",
+          "phase": "rest",
+          "sampling_rate": 100,
+          "lead_count": 12,
+          "lead_count_valid": true,
+          "duration_sec": 269.59,
+          "expected_duration_sec": 360.0,
+          "is_duration_irregular": true,
+          "has_unequal_lead_lengths": true,
+          "unequal_lead_lengths_detail": "[26959, 27100]",
+          "nan_count": 0,
+          "inf_count": 0,
+          "all_finite": true,
+          "flatline_leads": "None",
+          "clipping_pct": 0.0003,
+          "min_adc_val": 2.0,
+          "max_adc_val": 3064.0,
+          "mean_adc_val": 2048.35
+        },
+        "lead_ii_qc": {
+          "lead_name": "II",
+          "clipping_pct": 0.0,
+          "raw_std": 77.67,
+          "filtered_std": 71.08,
+          "estimated_snr_db": 9.22,
+          "is_flatline": false,
+          "quality_rating": "EXCELLENT"
+        },
+        "lead_ii_rpeaks": {
+          "count": 274,
+          "mean_hr_bpm": 60.5,
+          "median_rr_ms": 1010.0,
+          "implausible_rr_pct": 0.73
+        }
+      },
+      "rest_500hz": {
+        "integrity": {
+          "recording_id": "sub_029_rest_500hz",
+          "subject_id": "sub_029",
+          "phase": "rest",
+          "sampling_rate": 500,
+          "lead_count": 12,
+          "lead_count_valid": true,
+          "duration_sec": 269.59,
+          "expected_duration_sec": 360.0,
+          "is_duration_irregular": true,
+          "has_unequal_lead_lengths": true,
+          "unequal_lead_lengths_detail": "[134793, 135500]",
+          "nan_count": 0,
+          "inf_count": 0,
+          "all_finite": true,
+          "flatline_leads": "None",
+          "clipping_pct": 0.0001,
+          "min_adc_val": 2.025,
+          "max_adc_val": 3064.0,
+          "mean_adc_val": 2048.33
+        },
+        "lead_ii_qc": {
+          "lead_name": "II",
+          "clipping_pct": 0.0,
+          "raw_std": 65.23,
+          "filtered_std": 54.6,
+          "estimated_snr_db": 5.86,
+          "is_flatline": false,
+          "quality_rating": "ACCEPTABLE"
+        },
+        "lead_ii_rpeaks": {
+          "count": 303,
+          "mean_hr_bpm": 66.9,
+          "median_rr_ms": 959.0,
+          "implausible_rr_pct": 5.96
+        }
+      },
+      "stress_100hz": {
+        "integrity": {
+          "recording_id": "sub_029_stress_100hz",
+          "subject_id": "sub_029",
+          "phase": "stress",
+          "sampling_rate": 100,
+          "lead_count": 12,
+          "lead_count_valid": true,
+          "duration_sec": 720.0,
+          "expected_duration_sec": 720.0,
+          "is_duration_irregular": false,
+          "has_unequal_lead_lengths": false,
+          "unequal_lead_lengths_detail": "None",
+          "nan_count": 0,
+          "inf_count": 0,
+          "all_finite": true,
+          "flatline_leads": "None",
+          "clipping_pct": 0.0,
+          "min_adc_val": 1024.0,
+          "max_adc_val": 3064.0,
+          "mean_adc_val": 2047.51
+        },
+        "lead_ii_qc": {
+          "lead_name": "II",
+          "clipping_pct": 0.0,
+          "raw_std": 262.82,
+          "filtered_std": 117.53,
+          "estimated_snr_db": -5.45,
+          "is_flatline": false,
+          "quality_rating": "NOISY"
+        },
+        "lead_ii_rpeaks": {
+          "count": 983,
+          "mean_hr_bpm": 81.9,
+          "median_rr_ms": 760.0,
+          "implausible_rr_pct": 5.4
+        }
+      },
+      "stress_500hz": {
+        "integrity": {
+          "recording_id": "sub_029_stress_500hz",
+          "subject_id": "sub_029",
+          "phase": "stress",
+          "sampling_rate": 500,
+          "lead_count": 12,
+          "lead_count_valid": true,
+          "duration_sec": 720.0,
+          "expected_duration_sec": 720.0,
+          "is_duration_irregular": false,
+          "has_unequal_lead_lengths": false,
+          "unequal_lead_lengths_detail": "None",
+          "nan_count": 0,
+          "inf_count": 0,
+          "all_finite": true,
+          "flatline_leads": "None",
+          "clipping_pct": 0.0,
+          "min_adc_val": 1024.0,
+          "max_adc_val": 3064.0,
+          "mean_adc_val": 2047.55
+        },
+        "lead_ii_qc": {
+          "lead_name": "II",
+          "clipping_pct": 0.0,
+          "raw_std": 255.82,
+          "filtered_std": 90.38,
+          "estimated_snr_db": -8.01,
+          "is_flatline": false,
+          "quality_rating": "NOISY"
+        },
+        "lead_ii_rpeaks": {
+          "count": 1054,
+          "mean_hr_bpm": 87.9,
+          "median_rr_ms": 726.0,
+          "implausible_rr_pct": 10.35
+        }
+      },
+      "recover_100hz": {
+        "integrity": {
+          "recording_id": "sub_029_recover_100hz",
+          "subject_id": "sub_029",
+          "phase": "recover",
+          "sampling_rate": 100,
+          "lead_count": 12,
+          "lead_count_valid": true,
+          "duration_sec": 360.0,
+          "expected_duration_sec": 360.0,
+          "is_duration_irregular": false,
+          "has_unequal_lead_lengths": false,
+          "unequal_lead_lengths_detail": "None",
+          "nan_count": 0,
+          "inf_count": 0,
+          "all_finite": true,
+          "flatline_leads": "None",
+          "clipping_pct": 0.0,
+          "min_adc_val": 1552.0,
+          "max_adc_val": 2648.0,
+          "mean_adc_val": 2048.56
+        },
+        "lead_ii_qc": {
+          "lead_name": "II",
+          "clipping_pct": 0.0,
+          "raw_std": 74.57,
+          "filtered_std": 69.33,
+          "estimated_snr_db": 10.76,
+          "is_flatline": false,
+          "quality_rating": "EXCELLENT"
+        },
+        "lead_ii_rpeaks": {
+          "count": 372,
+          "mean_hr_bpm": 62.0,
+          "median_rr_ms": 970.0,
+          "implausible_rr_pct": 0.0
+        }
+      },
+      "recover_500hz": {
+        "integrity": {
+          "recording_id": "sub_029_recover_500hz",
+          "subject_id": "sub_029",
+          "phase": "recover",
+          "sampling_rate": 500,
+          "lead_count": 12,
+          "lead_count_valid": true,
+          "duration_sec": 360.0,
+          "expected_duration_sec": 360.0,
+          "is_duration_irregular": false,
+          "has_unequal_lead_lengths": false,
+          "unequal_lead_lengths_detail": "None",
+          "nan_count": 0,
+          "inf_count": 0,
+          "all_finite": true,
+          "flatline_leads": "None",
+          "clipping_pct": 0.0,
+          "min_adc_val": 1678.0,
+          "max_adc_val": 2527.0,
+          "mean_adc_val": 2048.66
+        },
+        "lead_ii_qc": {
+          "lead_name": "II",
+          "clipping_pct": 0.0,
+          "raw_std": 61.42,
+          "filtered_std": 52.75,
+          "estimated_snr_db": 7.12,
+          "is_flatline": false,
+          "quality_rating": "EXCELLENT"
+        },
+        "lead_ii_rpeaks": {
+          "count": 375,
+          "mean_hr_bpm": 62.4,
+          "median_rr_ms": 960.0,
+          "implausible_rr_pct": 0.53
+        }
+      }
+    },
+    "sub_054": {
+      "rest_100hz": {
+        "integrity": {
+          "recording_id": "sub_054_rest_100hz",
+          "subject_id": "sub_054",
+          "phase": "rest",
+          "sampling_rate": 100,
+          "lead_count": 12,
+          "lead_count_valid": true,
+          "duration_sec": 360.0,
+          "expected_duration_sec": 360.0,
+          "is_duration_irregular": false,
+          "has_unequal_lead_lengths": false,
+          "unequal_lead_lengths_detail": "None",
+          "nan_count": 0,
+          "inf_count": 0,
+          "all_finite": true,
+          "flatline_leads": "None",
+          "clipping_pct": 0.0,
+          "min_adc_val": 1024.0,
+          "max_adc_val": 3064.0,
+          "mean_adc_val": 2047.36
+        },
+        "lead_ii_qc": {
+          "lead_name": "II",
+          "clipping_pct": 0.0,
+          "raw_std": 143.99,
+          "filtered_std": 77.85,
+          "estimated_snr_db": -3.47,
+          "is_flatline": false,
+          "quality_rating": "NOISY"
+        },
+        "lead_ii_rpeaks": {
+          "count": 527,
+          "mean_hr_bpm": 87.8,
+          "median_rr_ms": 690.0,
+          "implausible_rr_pct": 0.76
+        }
+      },
+      "rest_500hz": {
+        "integrity": {
+          "recording_id": "sub_054_rest_500hz",
+          "subject_id": "sub_054",
+          "phase": "rest",
+          "sampling_rate": 500,
+          "lead_count": 12,
+          "lead_count_valid": true,
+          "duration_sec": 360.0,
+          "expected_duration_sec": 360.0,
+          "is_duration_irregular": false,
+          "has_unequal_lead_lengths": false,
+          "unequal_lead_lengths_detail": "None",
+          "nan_count": 0,
+          "inf_count": 0,
+          "all_finite": true,
+          "flatline_leads": "None",
+          "clipping_pct": 0.0,
+          "min_adc_val": 1024.0,
+          "max_adc_val": 3064.0,
+          "mean_adc_val": 2047.38
+        },
+        "lead_ii_qc": {
+          "lead_name": "II",
+          "clipping_pct": 0.0,
+          "raw_std": 135.74,
+          "filtered_std": 59.3,
+          "estimated_snr_db": -6.0,
+          "is_flatline": false,
+          "quality_rating": "NOISY"
+        },
+        "lead_ii_rpeaks": {
+          "count": 596,
+          "mean_hr_bpm": 99.3,
+          "median_rr_ms": 658.0,
+          "implausible_rr_pct": 11.93
+        }
+      },
+      "stress_100hz": {
+        "integrity": {
+          "recording_id": "sub_054_stress_100hz",
+          "subject_id": "sub_054",
+          "phase": "stress",
+          "sampling_rate": 100,
+          "lead_count": 12,
+          "lead_count_valid": true,
+          "duration_sec": 720.0,
+          "expected_duration_sec": 720.0,
+          "is_duration_irregular": false,
+          "has_unequal_lead_lengths": false,
+          "unequal_lead_lengths_detail": "None",
+          "nan_count": 0,
+          "inf_count": 0,
+          "all_finite": true,
+          "flatline_leads": "None",
+          "clipping_pct": 0.0,
+          "min_adc_val": 1024.0,
+          "max_adc_val": 3064.0,
+          "mean_adc_val": 2047.45
+        },
+        "lead_ii_qc": {
+          "lead_name": "II",
+          "clipping_pct": 0.0,
+          "raw_std": 194.43,
+          "filtered_std": 82.72,
+          "estimated_snr_db": -6.35,
+          "is_flatline": false,
+          "quality_rating": "NOISY"
+        },
+        "lead_ii_rpeaks": {
+          "count": 1238,
+          "mean_hr_bpm": 103.2,
+          "median_rr_ms": 570.0,
+          "implausible_rr_pct": 0.4
+        }
+      },
+      "stress_500hz": {
+        "integrity": {
+          "recording_id": "sub_054_stress_500hz",
+          "subject_id": "sub_054",
+          "phase": "stress",
+          "sampling_rate": 500,
+          "lead_count": 12,
+          "lead_count_valid": true,
+          "duration_sec": 720.0,
+          "expected_duration_sec": 720.0,
+          "is_duration_irregular": false,
+          "has_unequal_lead_lengths": false,
+          "unequal_lead_lengths_detail": "None",
+          "nan_count": 0,
+          "inf_count": 0,
+          "all_finite": true,
+          "flatline_leads": "None",
+          "clipping_pct": 0.0,
+          "min_adc_val": 1024.0,
+          "max_adc_val": 3064.0,
+          "mean_adc_val": 2047.48
+        },
+        "lead_ii_qc": {
+          "lead_name": "II",
+          "clipping_pct": 0.0,
+          "raw_std": 187.08,
+          "filtered_std": 62.25,
+          "estimated_snr_db": -8.9,
+          "is_flatline": false,
+          "quality_rating": "NOISY"
+        },
+        "lead_ii_rpeaks": {
+          "count": 1452,
+          "mean_hr_bpm": 121.1,
+          "median_rr_ms": 524.0,
+          "implausible_rr_pct": 19.85
+        }
+      },
+      "recover_100hz": {
+        "integrity": {
+          "recording_id": "sub_054_recover_100hz",
+          "subject_id": "sub_054",
+          "phase": "recover",
+          "sampling_rate": 100,
+          "lead_count": 12,
+          "lead_count_valid": true,
+          "duration_sec": 232.0,
+          "expected_duration_sec": 360.0,
+          "is_duration_irregular": true,
+          "has_unequal_lead_lengths": false,
+          "unequal_lead_lengths_detail": "None",
+          "nan_count": 0,
+          "inf_count": 0,
+          "all_finite": true,
+          "flatline_leads": "None",
+          "clipping_pct": 0.0,
+          "min_adc_val": 1536.0,
+          "max_adc_val": 2848.0,
+          "mean_adc_val": 2048.29
+        },
+        "lead_ii_qc": {
+          "lead_name": "II",
+          "clipping_pct": 0.0,
+          "raw_std": 93.81,
+          "filtered_std": 78.35,
+          "estimated_snr_db": 4.75,
+          "is_flatline": false,
+          "quality_rating": "ACCEPTABLE"
+        },
+        "lead_ii_rpeaks": {
+          "count": 373,
+          "mean_hr_bpm": 96.6,
+          "median_rr_ms": 610.0,
+          "implausible_rr_pct": 0.0
+        }
+      },
+      "recover_500hz": {
+        "integrity": {
+          "recording_id": "sub_054_recover_500hz",
+          "subject_id": "sub_054",
+          "phase": "recover",
+          "sampling_rate": 500,
+          "lead_count": 12,
+          "lead_count_valid": true,
+          "duration_sec": 232.0,
+          "expected_duration_sec": 360.0,
+          "is_duration_irregular": true,
+          "has_unequal_lead_lengths": false,
+          "unequal_lead_lengths_detail": "None",
+          "nan_count": 0,
+          "inf_count": 0,
+          "all_finite": true,
+          "flatline_leads": "None",
+          "clipping_pct": 0.0,
+          "min_adc_val": 32.0,
+          "max_adc_val": 2634.0,
+          "mean_adc_val": 2048.14
+        },
+        "lead_ii_qc": {
+          "lead_name": "II",
+          "clipping_pct": 0.0,
+          "raw_std": 81.0,
+          "filtered_std": 60.49,
+          "estimated_snr_db": 2.01,
+          "is_flatline": false,
+          "quality_rating": "ACCEPTABLE"
+        },
+        "lead_ii_rpeaks": {
+          "count": 418,
+          "mean_hr_bpm": 108.0,
+          "median_rr_ms": 582.0,
+          "implausible_rr_pct": 12.23
+        }
+      }
+    }
+  }
+}

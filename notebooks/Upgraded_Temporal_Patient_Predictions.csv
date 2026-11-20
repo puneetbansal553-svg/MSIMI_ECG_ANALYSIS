@@ -1,0 +1,781 @@
+Dataset,Model,Actual,Probability,Prediction
+Baseline - 85,Logistic Regression,1,0.0014891093587266035,0
+Baseline - 85,Logistic Regression,0,0.1802859193798812,0
+Baseline - 85,Logistic Regression,1,0.028162516600301186,0
+Baseline - 85,Logistic Regression,0,0.008256690506512558,0
+Baseline - 85,Logistic Regression,0,0.002103075961926573,0
+Baseline - 85,Logistic Regression,1,0.13100468662635256,0
+Baseline - 85,Logistic Regression,0,0.0007237184000572877,0
+Baseline - 85,Logistic Regression,0,0.3426834409880913,0
+Baseline - 85,Logistic Regression,0,0.0011601786031112337,0
+Baseline - 85,Logistic Regression,0,0.0016633909319718266,0
+Baseline - 85,Logistic Regression,0,0.25868682539809273,0
+Baseline - 85,Logistic Regression,0,0.0630634840270398,0
+Baseline - 85,Logistic Regression,0,0.0010859266012837152,0
+Baseline - 85,Logistic Regression,0,0.034153475234120836,0
+Baseline - 85,Logistic Regression,0,0.1765718698160716,0
+Baseline - 85,Logistic Regression,0,0.0025349310075323474,0
+Baseline - 85,Logistic Regression,0,8.167476141467822e-05,0
+Baseline - 85,Logistic Regression,0,0.23800985663346488,0
+Baseline - 85,Logistic Regression,0,0.011167770082539157,0
+Baseline - 85,Logistic Regression,0,0.0008982260085855252,0
+Baseline - 85,Logistic Regression,0,0.005075404416857149,0
+Baseline - 85,Logistic Regression,0,0.25668754154378515,0
+Baseline - 85,Logistic Regression,0,0.21601347443624044,0
+Baseline - 85,Logistic Regression,1,0.2584142482611385,0
+Baseline - 85,Logistic Regression,1,0.9507750366502433,1
+Baseline - 85,Logistic Regression,0,0.0024407660550713303,0
+Baseline - 85,Logistic Regression,0,0.0674695168666905,0
+Baseline - 85,Logistic Regression,0,0.25418301647930686,0
+Baseline - 85,Logistic Regression,1,0.0016222562577772467,0
+Baseline - 85,Logistic Regression,0,0.10399242674454813,0
+Baseline - 85,Logistic Regression,0,0.004772212005375439,0
+Baseline - 85,Logistic Regression,0,0.50126756412233,1
+Baseline - 85,Logistic Regression,1,0.23045284638090144,0
+Baseline - 85,Logistic Regression,1,0.0036276479216838606,0
+Baseline - 85,Logistic Regression,0,0.9982294950400348,1
+Baseline - 85,Logistic Regression,0,0.7423086456081583,1
+Baseline - 85,Logistic Regression,0,0.38692858404717145,0
+Baseline - 85,Logistic Regression,0,0.2552252970210167,0
+Baseline - 85,Logistic Regression,0,0.9740419871475966,1
+Baseline - 85,Logistic Regression,0,0.8198473765810445,1
+Baseline - 85,Logistic Regression,0,0.1883018877272623,0
+Baseline - 85,Logistic Regression,0,0.354413300311799,0
+Baseline - 85,Logistic Regression,0,0.29229751313487257,0
+Baseline - 85,Logistic Regression,0,9.952876411230593e-07,0
+Baseline - 85,Logistic Regression,0,0.014053975837336186,0
+Baseline - 85,Logistic Regression,0,0.14885378732679036,0
+Baseline - 85,Logistic Regression,0,0.06021760468017929,0
+Baseline - 85,Logistic Regression,0,0.04937997359286357,0
+Baseline - 85,Logistic Regression,0,0.05707571671746988,0
+Baseline - 85,Logistic Regression,0,0.06377785662067073,0
+Baseline - 85,Logistic Regression,0,0.31681520178323436,0
+Baseline - 85,Logistic Regression,0,0.20984587077078787,0
+Baseline - 85,Logistic Regression,0,0.0024188138781946708,0
+Baseline - 85,Logistic Regression,0,0.9284009535058284,1
+Baseline - 85,Logistic Regression,0,0.7890248662115675,1
+Baseline - 85,Logistic Regression,0,0.006806456869919747,0
+Baseline - 85,Logistic Regression,0,0.8673447429850821,1
+Baseline - 85,Logistic Regression,0,0.3304332563272624,0
+Baseline - 85,Logistic Regression,0,0.24031013405888568,0
+Baseline - 85,Logistic Regression,0,0.4834552270046503,0
+Baseline - 85,Logistic Regression,0,0.04596409742577687,0
+Baseline - 85,Logistic Regression,0,0.9510682099649737,1
+Baseline - 85,Logistic Regression,0,0.00106777566006269,0
+Baseline - 85,Logistic Regression,0,0.002205501071442881,0
+Baseline - 85,Logistic Regression,1,0.01949321999194731,0
+Baseline - 85,Logistic Regression,0,0.041455146792944084,0
+Baseline - 85,Logistic Regression,0,0.07742356102359717,0
+Baseline - 85,Logistic Regression,0,0.7564151544810449,1
+Baseline - 85,Logistic Regression,0,0.046195284910036626,0
+Baseline - 85,Logistic Regression,0,0.13144355865355437,0
+Baseline - 85,Logistic Regression,0,0.08153626282665863,0
+Baseline - 85,Logistic Regression,0,0.030232096180957877,0
+Baseline - 85,Logistic Regression,0,0.001580965771568569,0
+Baseline - 85,Logistic Regression,0,0.03554629810889963,0
+Baseline - 85,Logistic Regression,0,0.9524892530417304,1
+Baseline - 85,Logistic Regression,0,0.0987008376179061,0
+Baseline - 85,Logistic Regression,0,0.1256953658015085,0
+Baseline - 85,Logistic Regression,0,0.1852094133756269,0
+Baseline - 85,SVM,1,0.20636714556299413,0
+Baseline - 85,SVM,0,0.011447688925942619,0
+Baseline - 85,SVM,1,0.13531292163782635,0
+Baseline - 85,SVM,0,0.12055666853933003,0
+Baseline - 85,SVM,0,0.026824667682732246,0
+Baseline - 85,SVM,1,0.11484739185401183,0
+Baseline - 85,SVM,0,0.12128580514166866,0
+Baseline - 85,SVM,0,0.11011566344104799,0
+Baseline - 85,SVM,0,0.18642123800716962,0
+Baseline - 85,SVM,0,0.10779760558449282,0
+Baseline - 85,SVM,0,0.07781014290811614,0
+Baseline - 85,SVM,0,0.10836740147871377,0
+Baseline - 85,SVM,0,0.13913855309496562,0
+Baseline - 85,SVM,0,0.08119469263710025,0
+Baseline - 85,SVM,0,0.16180919776363537,0
+Baseline - 85,SVM,0,0.19605700284407165,0
+Baseline - 85,SVM,0,0.10677728271892403,0
+Baseline - 85,SVM,0,0.009604295789981416,0
+Baseline - 85,SVM,0,0.0800741517568849,0
+Baseline - 85,SVM,0,0.10257880710433044,0
+Baseline - 85,SVM,0,0.16431180812301238,0
+Baseline - 85,SVM,0,0.1097541853444328,0
+Baseline - 85,SVM,0,0.12401661339224836,0
+Baseline - 85,SVM,1,0.009196546590673751,0
+Baseline - 85,SVM,1,0.04433387142932716,0
+Baseline - 85,SVM,0,0.11341284577216473,0
+Baseline - 85,SVM,0,0.047576510133181205,0
+Baseline - 85,SVM,0,0.1001292834471562,0
+Baseline - 85,SVM,1,0.10223892033946436,0
+Baseline - 85,SVM,0,0.148194602480323,0
+Baseline - 85,SVM,0,0.17187786039282218,0
+Baseline - 85,SVM,0,0.06158005278786434,0
+Baseline - 85,SVM,1,0.12088244906568393,0
+Baseline - 85,SVM,1,0.1760196293147618,0
+Baseline - 85,SVM,0,0.05258053795319493,0
+Baseline - 85,SVM,0,0.08294779515571277,0
+Baseline - 85,SVM,0,0.11490430688982028,0
+Baseline - 85,SVM,0,0.0660125196523451,0
+Baseline - 85,SVM,0,0.04748807549061732,0
+Baseline - 85,SVM,0,0.09313217627824542,0
+Baseline - 85,SVM,0,0.05605707580910017,0
+Baseline - 85,SVM,0,0.12323669840362293,0
+Baseline - 85,SVM,0,0.11661047765620591,0
+Baseline - 85,SVM,0,0.07645576868334555,0
+Baseline - 85,SVM,0,0.12927053968168273,0
+Baseline - 85,SVM,0,0.08599079562153711,0
+Baseline - 85,SVM,0,0.088257838221321,0
+Baseline - 85,SVM,0,0.09690550093536243,0
+Baseline - 85,SVM,0,0.1924141101390915,0
+Baseline - 85,SVM,0,0.1642492670615032,0
+Baseline - 85,SVM,0,0.11060479680942951,0
+Baseline - 85,SVM,0,0.08965860488187789,0
+Baseline - 85,SVM,0,0.1812880017936494,0
+Baseline - 85,SVM,0,0.035909564636719786,0
+Baseline - 85,SVM,0,0.05709910811312639,0
+Baseline - 85,SVM,0,0.11787607221011731,0
+Baseline - 85,SVM,0,0.03446198966486317,0
+Baseline - 85,SVM,0,0.11299008067235587,0
+Baseline - 85,SVM,0,0.08244378453576068,0
+Baseline - 85,SVM,0,0.08699197179992685,0
+Baseline - 85,SVM,0,0.08849767837685568,0
+Baseline - 85,SVM,0,0.08988653421867264,0
+Baseline - 85,SVM,0,0.07651168325886379,0
+Baseline - 85,SVM,0,0.14377871053288308,0
+Baseline - 85,SVM,1,0.1477668292564156,0
+Baseline - 85,SVM,0,0.15285768639492964,0
+Baseline - 85,SVM,0,0.14648458315361812,0
+Baseline - 85,SVM,0,0.010769556790297296,0
+Baseline - 85,SVM,0,0.06144014038223789,0
+Baseline - 85,SVM,0,0.13736558579370303,0
+Baseline - 85,SVM,0,0.11402481397118366,0
+Baseline - 85,SVM,0,0.1356275306363464,0
+Baseline - 85,SVM,0,0.07853289993294603,0
+Baseline - 85,SVM,0,0.14359565187304607,0
+Baseline - 85,SVM,0,0.04470274736406487,0
+Baseline - 85,SVM,0,0.10071648148995878,0
+Baseline - 85,SVM,0,0.05392848211597767,0
+Baseline - 85,SVM,0,0.10099469218121546,0
+Baseline - 85,Random Forest,1,0.05333333333333334,0
+Baseline - 85,Random Forest,0,0.18,0
+Baseline - 85,Random Forest,1,0.16,0
+Baseline - 85,Random Forest,0,0.14666666666666667,0
+Baseline - 85,Random Forest,0,0.2833333333333333,0
+Baseline - 85,Random Forest,1,0.4266666666666667,0
+Baseline - 85,Random Forest,0,0.21666666666666667,0
+Baseline - 85,Random Forest,0,0.15666666666666668,0
+Baseline - 85,Random Forest,0,0.1,0
+Baseline - 85,Random Forest,0,0.19333333333333333,0
+Baseline - 85,Random Forest,0,0.19333333333333333,0
+Baseline - 85,Random Forest,0,0.12666666666666668,0
+Baseline - 85,Random Forest,0,0.05,0
+Baseline - 85,Random Forest,0,0.23333333333333334,0
+Baseline - 85,Random Forest,0,0.03666666666666667,0
+Baseline - 85,Random Forest,0,0.1,0
+Baseline - 85,Random Forest,0,0.3,0
+Baseline - 85,Random Forest,0,0.5733333333333334,1
+Baseline - 85,Random Forest,0,0.29,0
+Baseline - 85,Random Forest,0,0.17333333333333334,0
+Baseline - 85,Random Forest,0,0.056666666666666664,0
+Baseline - 85,Random Forest,0,0.33,0
+Baseline - 85,Random Forest,0,0.06,0
+Baseline - 85,Random Forest,1,0.49,0
+Baseline - 85,Random Forest,1,0.4533333333333333,0
+Baseline - 85,Random Forest,0,0.07333333333333333,0
+Baseline - 85,Random Forest,0,0.21333333333333335,0
+Baseline - 85,Random Forest,0,0.4166666666666667,0
+Baseline - 85,Random Forest,1,0.36,0
+Baseline - 85,Random Forest,0,0.16333333333333333,0
+Baseline - 85,Random Forest,0,0.04666666666666667,0
+Baseline - 85,Random Forest,0,0.3233333333333333,0
+Baseline - 85,Random Forest,1,0.2633333333333333,0
+Baseline - 85,Random Forest,1,0.1,0
+Baseline - 85,Random Forest,0,0.52,1
+Baseline - 85,Random Forest,0,0.43666666666666665,0
+Baseline - 85,Random Forest,0,0.44666666666666666,0
+Baseline - 85,Random Forest,0,0.35,0
+Baseline - 85,Random Forest,0,0.3933333333333333,0
+Baseline - 85,Random Forest,0,0.15666666666666668,0
+Baseline - 85,Random Forest,0,0.27666666666666667,0
+Baseline - 85,Random Forest,0,0.23,0
+Baseline - 85,Random Forest,0,0.23,0
+Baseline - 85,Random Forest,0,0.21,0
+Baseline - 85,Random Forest,0,0.17,0
+Baseline - 85,Random Forest,0,0.2866666666666667,0
+Baseline - 85,Random Forest,0,0.32,0
+Baseline - 85,Random Forest,0,0.35,0
+Baseline - 85,Random Forest,0,0.20333333333333334,0
+Baseline - 85,Random Forest,0,0.13666666666666666,0
+Baseline - 85,Random Forest,0,0.23666666666666666,0
+Baseline - 85,Random Forest,0,0.4066666666666667,0
+Baseline - 85,Random Forest,0,0.043333333333333335,0
+Baseline - 85,Random Forest,0,0.15666666666666668,0
+Baseline - 85,Random Forest,0,0.3233333333333333,0
+Baseline - 85,Random Forest,0,0.32666666666666666,0
+Baseline - 85,Random Forest,0,0.32,0
+Baseline - 85,Random Forest,0,0.29333333333333333,0
+Baseline - 85,Random Forest,0,0.6133333333333333,1
+Baseline - 85,Random Forest,0,0.32,0
+Baseline - 85,Random Forest,0,0.21,0
+Baseline - 85,Random Forest,0,0.5266666666666666,1
+Baseline - 85,Random Forest,0,0.18333333333333332,0
+Baseline - 85,Random Forest,0,0.07333333333333333,0
+Baseline - 85,Random Forest,1,0.20333333333333334,0
+Baseline - 85,Random Forest,0,0.16,0
+Baseline - 85,Random Forest,0,0.1,0
+Baseline - 85,Random Forest,0,0.29333333333333333,0
+Baseline - 85,Random Forest,0,0.37,0
+Baseline - 85,Random Forest,0,0.15666666666666668,0
+Baseline - 85,Random Forest,0,0.3,0
+Baseline - 85,Random Forest,0,0.19,0
+Baseline - 85,Random Forest,0,0.37,0
+Baseline - 85,Random Forest,0,0.06666666666666667,0
+Baseline - 85,Random Forest,0,0.04,0
+Baseline - 85,Random Forest,0,0.19,0
+Baseline - 85,Random Forest,0,0.25333333333333335,0
+Baseline - 85,Random Forest,0,0.37666666666666665,0
+Baseline - 85,KNN,1,0.0,0
+Baseline - 85,KNN,0,0.2136729577982612,0
+Baseline - 85,KNN,1,0.0,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.3975719648150289,0
+Baseline - 85,KNN,1,0.19897518890306312,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.24579963253201734,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.17542466595595124,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.20186406442518923,0
+Baseline - 85,KNN,0,0.38338538000740835,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,1,0.42533652947828776,0
+Baseline - 85,KNN,1,0.21524145172843573,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.1855202623003853,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,1,0.1749434661468899,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.18662432018272979,0
+Baseline - 85,KNN,1,0.0,0
+Baseline - 85,KNN,1,0.0,0
+Baseline - 85,KNN,0,0.3873840337789288,0
+Baseline - 85,KNN,0,0.19637701330049218,0
+Baseline - 85,KNN,0,0.18926167203827302,0
+Baseline - 85,KNN,0,0.18739580064829384,0
+Baseline - 85,KNN,0,0.22830436007367155,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.39815483401469226,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.20623347239541756,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.19717638042585292,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.2257829813420537,0
+Baseline - 85,KNN,0,0.19954717780434475,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.446553945650837,0
+Baseline - 85,KNN,0,0.19935962910863228,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.41971444227249355,0
+Baseline - 85,KNN,0,0.19842086288734523,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,1,0.0,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.4148342751271051,0
+Baseline - 85,KNN,0,0.40483621913501505,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.20146641264264312,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.19941861704955843,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.0,0
+Baseline - 85,KNN,0,0.3884260351761037,0
+Baseline - 85,XGBoost,1,0.011328698135912418,0
+Baseline - 85,XGBoost,0,0.014380558393895626,0
+Baseline - 85,XGBoost,1,0.006394504569470882,0
+Baseline - 85,XGBoost,0,0.011196894571185112,0
+Baseline - 85,XGBoost,0,0.12045766413211823,0
+Baseline - 85,XGBoost,1,0.04754084348678589,0
+Baseline - 85,XGBoost,0,0.056751444935798645,0
+Baseline - 85,XGBoost,0,0.004627468530088663,0
+Baseline - 85,XGBoost,0,0.00493545550853014,0
+Baseline - 85,XGBoost,0,0.06450039148330688,0
+Baseline - 85,XGBoost,0,0.018626708537340164,0
+Baseline - 85,XGBoost,0,0.006338165141642094,0
+Baseline - 85,XGBoost,0,0.00783852580934763,0
+Baseline - 85,XGBoost,0,0.05003158748149872,0
+Baseline - 85,XGBoost,0,0.0032745974604040384,0
+Baseline - 85,XGBoost,0,0.0032548189628869295,0
+Baseline - 85,XGBoost,0,0.04634111002087593,0
+Baseline - 85,XGBoost,0,0.10459936410188675,0
+Baseline - 85,XGBoost,0,0.71528559923172,1
+Baseline - 85,XGBoost,0,0.0629204735159874,0
+Baseline - 85,XGBoost,0,0.007183258421719074,0
+Baseline - 85,XGBoost,0,0.05866730585694313,0
+Baseline - 85,XGBoost,0,0.010503984056413174,0
+Baseline - 85,XGBoost,1,0.729866087436676,1
+Baseline - 85,XGBoost,1,0.20632751286029816,0
+Baseline - 85,XGBoost,0,0.012880070134997368,0
+Baseline - 85,XGBoost,0,0.020584987476468086,0
+Baseline - 85,XGBoost,0,0.1061917170882225,0
+Baseline - 85,XGBoost,1,0.16639581322669983,0
+Baseline - 85,XGBoost,0,0.013928000815212727,0
+Baseline - 85,XGBoost,0,0.006876674480736256,0
+Baseline - 85,XGBoost,0,0.27487486600875854,0
+Baseline - 85,XGBoost,1,0.017149345949292183,0
+Baseline - 85,XGBoost,1,0.0052118320018053055,0
+Baseline - 85,XGBoost,0,0.7438502907752991,1
+Baseline - 85,XGBoost,0,0.11967252939939499,0
+Baseline - 85,XGBoost,0,0.8886755108833313,1
+Baseline - 85,XGBoost,0,0.07648851722478867,0
+Baseline - 85,XGBoost,0,0.11526070535182953,0
+Baseline - 85,XGBoost,0,0.008982215076684952,0
+Baseline - 85,XGBoost,0,0.02139499969780445,0
+Baseline - 85,XGBoost,0,0.020715560764074326,0
+Baseline - 85,XGBoost,0,0.05286641791462898,0
+Baseline - 85,XGBoost,0,0.01911149173974991,0
+Baseline - 85,XGBoost,0,0.018295947462320328,0
+Baseline - 85,XGBoost,0,0.2256794422864914,0
+Baseline - 85,XGBoost,0,0.07408154010772705,0
+Baseline - 85,XGBoost,0,0.03551438823342323,0
+Baseline - 85,XGBoost,0,0.04380055144429207,0
+Baseline - 85,XGBoost,0,0.05952886864542961,0
+Baseline - 85,XGBoost,0,0.10272403061389923,0
+Baseline - 85,XGBoost,0,0.019643796607851982,0
+Baseline - 85,XGBoost,0,0.008199705742299557,0
+Baseline - 85,XGBoost,0,0.03483216091990471,0
+Baseline - 85,XGBoost,0,0.11142342537641525,0
+Baseline - 85,XGBoost,0,0.12989558279514313,0
+Baseline - 85,XGBoost,0,0.47130706906318665,0
+Baseline - 85,XGBoost,0,0.03849814459681511,0
+Baseline - 85,XGBoost,0,0.7354114651679993,1
+Baseline - 85,XGBoost,0,0.03841360658407211,0
+Baseline - 85,XGBoost,0,0.05674978718161583,0
+Baseline - 85,XGBoost,0,0.18532244861125946,0
+Baseline - 85,XGBoost,0,0.006770770531147718,0
+Baseline - 85,XGBoost,0,0.006169418804347515,0
+Baseline - 85,XGBoost,1,0.268544465303421,0
+Baseline - 85,XGBoost,0,0.02699197642505169,0
+Baseline - 85,XGBoost,0,0.011131067760288715,0
+Baseline - 85,XGBoost,0,0.05003606155514717,0
+Baseline - 85,XGBoost,0,0.04202190414071083,0
+Baseline - 85,XGBoost,0,0.004647487308830023,0
+Baseline - 85,XGBoost,0,0.030601298436522484,0
+Baseline - 85,XGBoost,0,0.009513868018984795,0
+Baseline - 85,XGBoost,0,0.1143907681107521,0
+Baseline - 85,XGBoost,0,0.002187577076256275,0
+Baseline - 85,XGBoost,0,0.016370920464396477,0
+Baseline - 85,XGBoost,0,0.020316459238529205,0
+Baseline - 85,XGBoost,0,0.05825083702802658,0
+Baseline - 85,XGBoost,0,0.09087250381708145,0
+Temporal - 215,Logistic Regression,1,0.0009001950023789818,0
+Temporal - 215,Logistic Regression,0,0.03476128581610651,0
+Temporal - 215,Logistic Regression,1,0.006350832274468914,0
+Temporal - 215,Logistic Regression,0,0.0009640588187286153,0
+Temporal - 215,Logistic Regression,0,0.0020644422554426636,0
+Temporal - 215,Logistic Regression,1,0.049836611028689186,0
+Temporal - 215,Logistic Regression,0,0.0027060131850353934,0
+Temporal - 215,Logistic Regression,0,0.2226578923873791,0
+Temporal - 215,Logistic Regression,0,0.0008161360733029677,0
+Temporal - 215,Logistic Regression,0,5.798721639926359e-05,0
+Temporal - 215,Logistic Regression,0,0.04218949359963442,0
+Temporal - 215,Logistic Regression,0,0.05345197029693036,0
+Temporal - 215,Logistic Regression,0,5.541075536448381e-05,0
+Temporal - 215,Logistic Regression,0,0.04782629202944356,0
+Temporal - 215,Logistic Regression,0,0.10724596328708716,0
+Temporal - 215,Logistic Regression,0,1.9835643124863188e-05,0
+Temporal - 215,Logistic Regression,0,0.0009172672216924762,0
+Temporal - 215,Logistic Regression,0,0.14000211653627467,0
+Temporal - 215,Logistic Regression,0,6.006008487543134e-05,0
+Temporal - 215,Logistic Regression,0,3.3894595642016766e-05,0
+Temporal - 215,Logistic Regression,0,0.006899104586932297,0
+Temporal - 215,Logistic Regression,0,0.29503386594701864,0
+Temporal - 215,Logistic Regression,0,0.14112095017292087,0
+Temporal - 215,Logistic Regression,1,0.03523260603591861,0
+Temporal - 215,Logistic Regression,1,0.9626052325472317,1
+Temporal - 215,Logistic Regression,0,0.0048459676442644106,0
+Temporal - 215,Logistic Regression,0,0.05614861045728239,0
+Temporal - 215,Logistic Regression,0,0.3796063303140879,0
+Temporal - 215,Logistic Regression,1,0.0039431020001730105,0
+Temporal - 215,Logistic Regression,0,0.23429175386501894,0
+Temporal - 215,Logistic Regression,0,0.011462298964359909,0
+Temporal - 215,Logistic Regression,0,0.020011106268764192,0
+Temporal - 215,Logistic Regression,1,0.31957023067895896,0
+Temporal - 215,Logistic Regression,1,0.0009790153558391838,0
+Temporal - 215,Logistic Regression,0,0.9919262359754809,1
+Temporal - 215,Logistic Regression,0,0.6116317999688562,1
+Temporal - 215,Logistic Regression,0,0.7668982223934055,1
+Temporal - 215,Logistic Regression,0,0.5909437302385322,1
+Temporal - 215,Logistic Regression,0,0.9988366564119646,1
+Temporal - 215,Logistic Regression,0,0.9998089274406082,1
+Temporal - 215,Logistic Regression,0,0.0009185588030851494,0
+Temporal - 215,Logistic Regression,0,0.8294775713907739,1
+Temporal - 215,Logistic Regression,0,0.03506927876302173,0
+Temporal - 215,Logistic Regression,0,0.9912469971963829,1
+Temporal - 215,Logistic Regression,0,0.002687084735434855,0
+Temporal - 215,Logistic Regression,0,0.05577586989193758,0
+Temporal - 215,Logistic Regression,0,0.005492150363707128,0
+Temporal - 215,Logistic Regression,0,0.05898064164766596,0
+Temporal - 215,Logistic Regression,0,0.020138274528992594,0
+Temporal - 215,Logistic Regression,0,0.0268257951577666,0
+Temporal - 215,Logistic Regression,0,0.06738931387791113,0
+Temporal - 215,Logistic Regression,0,0.09746400005742172,0
+Temporal - 215,Logistic Regression,0,0.001308908394788674,0
+Temporal - 215,Logistic Regression,0,0.9339110350021388,1
+Temporal - 215,Logistic Regression,0,0.352212218399445,0
+Temporal - 215,Logistic Regression,0,0.010451046437075446,0
+Temporal - 215,Logistic Regression,0,0.6535084566176312,1
+Temporal - 215,Logistic Regression,0,0.09886953925162009,0
+Temporal - 215,Logistic Regression,0,0.09167129572531076,0
+Temporal - 215,Logistic Regression,0,0.3637773445547406,0
+Temporal - 215,Logistic Regression,0,0.010962756939821138,0
+Temporal - 215,Logistic Regression,0,0.8695561999110072,1
+Temporal - 215,Logistic Regression,0,0.00013217512830617843,0
+Temporal - 215,Logistic Regression,0,0.011642379084713219,0
+Temporal - 215,Logistic Regression,1,0.00832338122966364,0
+Temporal - 215,Logistic Regression,0,0.03619666941295766,0
+Temporal - 215,Logistic Regression,0,0.07396410649097744,0
+Temporal - 215,Logistic Regression,0,0.2806453017294155,0
+Temporal - 215,Logistic Regression,0,0.011763730906347254,0
+Temporal - 215,Logistic Regression,0,0.029556084664553815,0
+Temporal - 215,Logistic Regression,0,0.01852129348278735,0
+Temporal - 215,Logistic Regression,0,0.041385455526820346,0
+Temporal - 215,Logistic Regression,0,0.0002591207640958157,0
+Temporal - 215,Logistic Regression,0,0.0027406825425784266,0
+Temporal - 215,Logistic Regression,0,0.9832812115129569,1
+Temporal - 215,Logistic Regression,0,0.0721753617692047,0
+Temporal - 215,Logistic Regression,0,0.04567494810348889,0
+Temporal - 215,Logistic Regression,0,0.9525897102187769,1
+Temporal - 215,SVM,1,0.14583777427021322,0
+Temporal - 215,SVM,0,0.0837858612876354,0
+Temporal - 215,SVM,1,0.10151341002449578,0
+Temporal - 215,SVM,0,0.11482428261430173,0
+Temporal - 215,SVM,0,0.03646467692287521,0
+Temporal - 215,SVM,1,0.09517399575704784,0
+Temporal - 215,SVM,0,0.2236021398581049,0
+Temporal - 215,SVM,0,0.087665598108595,0
+Temporal - 215,SVM,0,0.12474590496108824,0
+Temporal - 215,SVM,0,0.05946879614147522,0
+Temporal - 215,SVM,0,0.10200087636015244,0
+Temporal - 215,SVM,0,0.1000915738738459,0
+Temporal - 215,SVM,0,0.14008387071917625,0
+Temporal - 215,SVM,0,0.11097958483384945,0
+Temporal - 215,SVM,0,0.18652872226700135,0
+Temporal - 215,SVM,0,0.14015374982380926,0
+Temporal - 215,SVM,0,0.11115368564255163,0
+Temporal - 215,SVM,0,0.037875123909486046,0
+Temporal - 215,SVM,0,0.08781835979235235,0
+Temporal - 215,SVM,0,0.10676988653931888,0
+Temporal - 215,SVM,0,0.11263003696746811,0
+Temporal - 215,SVM,0,0.09711472115043301,0
+Temporal - 215,SVM,0,0.12025222009042227,0
+Temporal - 215,SVM,1,0.03567598127850487,0
+Temporal - 215,SVM,1,0.10409743766687926,0
+Temporal - 215,SVM,0,0.11450193580044858,0
+Temporal - 215,SVM,0,0.10339736963132987,0
+Temporal - 215,SVM,0,0.08262076710641851,0
+Temporal - 215,SVM,1,0.07256193444172396,0
+Temporal - 215,SVM,0,0.13589437811609914,0
+Temporal - 215,SVM,0,0.13169476707876038,0
+Temporal - 215,SVM,0,0.06542399955160064,0
+Temporal - 215,SVM,1,0.07871886586164525,0
+Temporal - 215,SVM,1,0.24681479232749595,0
+Temporal - 215,SVM,0,0.10680551712303173,0
+Temporal - 215,SVM,0,0.06189320089204845,0
+Temporal - 215,SVM,0,0.09167340337269615,0
+Temporal - 215,SVM,0,0.10519943377972682,0
+Temporal - 215,SVM,0,0.1050465005900591,0
+Temporal - 215,SVM,0,0.07039300542298059,0
+Temporal - 215,SVM,0,0.10915905382567909,0
+Temporal - 215,SVM,0,0.07885153398314204,0
+Temporal - 215,SVM,0,0.14082675478912418,0
+Temporal - 215,SVM,0,0.07057684737372698,0
+Temporal - 215,SVM,0,0.13324966773596783,0
+Temporal - 215,SVM,0,0.09876295601310978,0
+Temporal - 215,SVM,0,0.16558358909511933,0
+Temporal - 215,SVM,0,0.07584861220518285,0
+Temporal - 215,SVM,0,0.15791487542664695,0
+Temporal - 215,SVM,0,0.134590638943555,0
+Temporal - 215,SVM,0,0.16256988589544122,0
+Temporal - 215,SVM,0,0.09007499862999448,0
+Temporal - 215,SVM,0,0.1393947099168497,0
+Temporal - 215,SVM,0,0.06799803880149011,0
+Temporal - 215,SVM,0,0.10922452251010976,0
+Temporal - 215,SVM,0,0.1464857847352236,0
+Temporal - 215,SVM,0,0.07139443377911006,0
+Temporal - 215,SVM,0,0.09343845168291906,0
+Temporal - 215,SVM,0,0.06095586100368137,0
+Temporal - 215,SVM,0,0.08019952992105674,0
+Temporal - 215,SVM,0,0.11345618167997458,0
+Temporal - 215,SVM,0,0.052594885013869226,0
+Temporal - 215,SVM,0,0.10720441348414957,0
+Temporal - 215,SVM,0,0.12334855528255102,0
+Temporal - 215,SVM,1,0.12145027072143096,0
+Temporal - 215,SVM,0,0.16478636428028373,0
+Temporal - 215,SVM,0,0.15845726810767616,0
+Temporal - 215,SVM,0,0.040608401113877264,0
+Temporal - 215,SVM,0,0.11590457291287573,0
+Temporal - 215,SVM,0,0.15370320955305913,0
+Temporal - 215,SVM,0,0.1541108270455643,0
+Temporal - 215,SVM,0,0.12548481249129284,0
+Temporal - 215,SVM,0,0.10927624365820625,0
+Temporal - 215,SVM,0,0.13015925936721973,0
+Temporal - 215,SVM,0,0.0741527939468504,0
+Temporal - 215,SVM,0,0.08359452281840864,0
+Temporal - 215,SVM,0,0.07968324924272498,0
+Temporal - 215,SVM,0,0.07327804944424783,0
+Temporal - 215,Random Forest,1,0.1,0
+Temporal - 215,Random Forest,0,0.12333333333333334,0
+Temporal - 215,Random Forest,1,0.21,0
+Temporal - 215,Random Forest,0,0.15333333333333332,0
+Temporal - 215,Random Forest,0,0.2866666666666667,0
+Temporal - 215,Random Forest,1,0.33,0
+Temporal - 215,Random Forest,0,0.26666666666666666,0
+Temporal - 215,Random Forest,0,0.32666666666666666,0
+Temporal - 215,Random Forest,0,0.09666666666666666,0
+Temporal - 215,Random Forest,0,0.23333333333333334,0
+Temporal - 215,Random Forest,0,0.21,0
+Temporal - 215,Random Forest,0,0.19333333333333333,0
+Temporal - 215,Random Forest,0,0.043333333333333335,0
+Temporal - 215,Random Forest,0,0.16333333333333333,0
+Temporal - 215,Random Forest,0,0.09,0
+Temporal - 215,Random Forest,0,0.14,0
+Temporal - 215,Random Forest,0,0.30333333333333334,0
+Temporal - 215,Random Forest,0,0.42333333333333334,0
+Temporal - 215,Random Forest,0,0.25666666666666665,0
+Temporal - 215,Random Forest,0,0.2633333333333333,0
+Temporal - 215,Random Forest,0,0.08,0
+Temporal - 215,Random Forest,0,0.29333333333333333,0
+Temporal - 215,Random Forest,0,0.3,0
+Temporal - 215,Random Forest,1,0.41,0
+Temporal - 215,Random Forest,1,0.4866666666666667,0
+Temporal - 215,Random Forest,0,0.06,0
+Temporal - 215,Random Forest,0,0.24,0
+Temporal - 215,Random Forest,0,0.52,1
+Temporal - 215,Random Forest,1,0.32,0
+Temporal - 215,Random Forest,0,0.2966666666666667,0
+Temporal - 215,Random Forest,0,0.08666666666666667,0
+Temporal - 215,Random Forest,0,0.2633333333333333,0
+Temporal - 215,Random Forest,1,0.3433333333333333,0
+Temporal - 215,Random Forest,1,0.16666666666666666,0
+Temporal - 215,Random Forest,0,0.38666666666666666,0
+Temporal - 215,Random Forest,0,0.37,0
+Temporal - 215,Random Forest,0,0.31333333333333335,0
+Temporal - 215,Random Forest,0,0.34,0
+Temporal - 215,Random Forest,0,0.4533333333333333,0
+Temporal - 215,Random Forest,0,0.23333333333333334,0
+Temporal - 215,Random Forest,0,0.27666666666666667,0
+Temporal - 215,Random Forest,0,0.22333333333333333,0
+Temporal - 215,Random Forest,0,0.23666666666666666,0
+Temporal - 215,Random Forest,0,0.23666666666666666,0
+Temporal - 215,Random Forest,0,0.17666666666666667,0
+Temporal - 215,Random Forest,0,0.15,0
+Temporal - 215,Random Forest,0,0.24,0
+Temporal - 215,Random Forest,0,0.36,0
+Temporal - 215,Random Forest,0,0.17,0
+Temporal - 215,Random Forest,0,0.12,0
+Temporal - 215,Random Forest,0,0.18,0
+Temporal - 215,Random Forest,0,0.2833333333333333,0
+Temporal - 215,Random Forest,0,0.03333333333333333,0
+Temporal - 215,Random Forest,0,0.16,0
+Temporal - 215,Random Forest,0,0.26,0
+Temporal - 215,Random Forest,0,0.2633333333333333,0
+Temporal - 215,Random Forest,0,0.35,0
+Temporal - 215,Random Forest,0,0.32,0
+Temporal - 215,Random Forest,0,0.51,1
+Temporal - 215,Random Forest,0,0.21333333333333335,0
+Temporal - 215,Random Forest,0,0.16666666666666666,0
+Temporal - 215,Random Forest,0,0.46,0
+Temporal - 215,Random Forest,0,0.16,0
+Temporal - 215,Random Forest,0,0.11333333333333333,0
+Temporal - 215,Random Forest,1,0.11333333333333333,0
+Temporal - 215,Random Forest,0,0.21666666666666667,0
+Temporal - 215,Random Forest,0,0.13333333333333333,0
+Temporal - 215,Random Forest,0,0.22333333333333333,0
+Temporal - 215,Random Forest,0,0.27666666666666667,0
+Temporal - 215,Random Forest,0,0.19333333333333333,0
+Temporal - 215,Random Forest,0,0.24333333333333335,0
+Temporal - 215,Random Forest,0,0.2,0
+Temporal - 215,Random Forest,0,0.23333333333333334,0
+Temporal - 215,Random Forest,0,0.1,0
+Temporal - 215,Random Forest,0,0.15,0
+Temporal - 215,Random Forest,0,0.18666666666666668,0
+Temporal - 215,Random Forest,0,0.26666666666666666,0
+Temporal - 215,Random Forest,0,0.6266666666666667,1
+Temporal - 215,KNN,1,0.0,0
+Temporal - 215,KNN,0,0.1835860637902275,0
+Temporal - 215,KNN,1,0.0,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.40520148731711947,0
+Temporal - 215,KNN,1,0.0,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.20729582663699936,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.20991154911482435,0
+Temporal - 215,KNN,0,0.2178135359614532,0
+Temporal - 215,KNN,0,0.19927377735355503,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.17976712795523256,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.1925268615970977,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.20433287955584856,0
+Temporal - 215,KNN,0,0.18557907689891892,0
+Temporal - 215,KNN,1,0.19367568131693844,0
+Temporal - 215,KNN,1,0.2056260311256767,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.20690927284411903,0
+Temporal - 215,KNN,1,0.0,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.19971627067914433,0
+Temporal - 215,KNN,1,0.1918451239184935,0
+Temporal - 215,KNN,1,0.0,0
+Temporal - 215,KNN,0,0.19565833362140672,0
+Temporal - 215,KNN,0,0.2377058082994488,0
+Temporal - 215,KNN,0,0.18970106813270304,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.2160918721241456,0
+Temporal - 215,KNN,0,0.19686555166322858,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.19249559819431314,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.20042216316908912,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.2062125058633596,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.25660322439650574,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.19569551446447217,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.4169109806535949,0
+Temporal - 215,KNN,0,0.20514274317570336,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.41347173512427343,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,1,0.0,0
+Temporal - 215,KNN,0,0.18637911593455714,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.20045930755474098,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.18631374065351156,0
+Temporal - 215,KNN,0,0.19958767304036087,0
+Temporal - 215,KNN,0,0.19052393909518278,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.19471759557984883,0
+Temporal - 215,KNN,0,0.23180785067666618,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.0,0
+Temporal - 215,KNN,0,0.4203464561544557,0
+Temporal - 215,XGBoost,1,0.005389007739722729,0
+Temporal - 215,XGBoost,0,0.006327932700514793,0
+Temporal - 215,XGBoost,1,0.043327201157808304,0
+Temporal - 215,XGBoost,0,0.008297116495668888,0
+Temporal - 215,XGBoost,0,0.056125085800886154,0
+Temporal - 215,XGBoost,1,0.16428913176059723,0
+Temporal - 215,XGBoost,0,0.007075553759932518,0
+Temporal - 215,XGBoost,0,0.07527028024196625,0
+Temporal - 215,XGBoost,0,0.005674872547388077,0
+Temporal - 215,XGBoost,0,0.043092433363199234,0
+Temporal - 215,XGBoost,0,0.026017513126134872,0
+Temporal - 215,XGBoost,0,0.010835465043783188,0
+Temporal - 215,XGBoost,0,0.005669201258569956,0
+Temporal - 215,XGBoost,0,0.04932741820812225,0
+Temporal - 215,XGBoost,0,0.011422640644013882,0
+Temporal - 215,XGBoost,0,0.017223767936229706,0
+Temporal - 215,XGBoost,0,0.06556734442710876,0
+Temporal - 215,XGBoost,0,0.5895199179649353,1
+Temporal - 215,XGBoost,0,0.023271653801202774,0
+Temporal - 215,XGBoost,0,0.15053141117095947,0
+Temporal - 215,XGBoost,0,0.005376070272177458,0
+Temporal - 215,XGBoost,0,0.10474774241447449,0
+Temporal - 215,XGBoost,0,0.07041799277067184,0
+Temporal - 215,XGBoost,1,0.03424545004963875,0
+Temporal - 215,XGBoost,1,0.2182721197605133,0
+Temporal - 215,XGBoost,0,0.0054410602897405624,0
+Temporal - 215,XGBoost,0,0.017586173489689827,0
+Temporal - 215,XGBoost,0,0.8178495168685913,1
+Temporal - 215,XGBoost,1,0.010157166048884392,0
+Temporal - 215,XGBoost,0,0.01226806826889515,0
+Temporal - 215,XGBoost,0,0.0067021045833826065,0
+Temporal - 215,XGBoost,0,0.0434250645339489,0
+Temporal - 215,XGBoost,1,0.030401624739170074,0
+Temporal - 215,XGBoost,1,0.014103446155786514,0
+Temporal - 215,XGBoost,0,0.5320937633514404,1
+Temporal - 215,XGBoost,0,0.0418693944811821,0
+Temporal - 215,XGBoost,0,0.8550447225570679,1
+Temporal - 215,XGBoost,0,0.05621989816427231,0
+Temporal - 215,XGBoost,0,0.4507782459259033,0
+Temporal - 215,XGBoost,0,0.03546483442187309,0
+Temporal - 215,XGBoost,0,0.033496469259262085,0
+Temporal - 215,XGBoost,0,0.06768327206373215,0
+Temporal - 215,XGBoost,0,0.024502910673618317,0
+Temporal - 215,XGBoost,0,0.0940096452832222,0
+Temporal - 215,XGBoost,0,0.05208994820713997,0
+Temporal - 215,XGBoost,0,0.00594170019030571,0
+Temporal - 215,XGBoost,0,0.1670820116996765,0
+Temporal - 215,XGBoost,0,0.1282631903886795,0
+Temporal - 215,XGBoost,0,0.005926558747887611,0
+Temporal - 215,XGBoost,0,0.04592227563261986,0
+Temporal - 215,XGBoost,0,0.011108102276921272,0
+Temporal - 215,XGBoost,0,0.013194505125284195,0
+Temporal - 215,XGBoost,0,0.004621636588126421,0
+Temporal - 215,XGBoost,0,0.019553832709789276,0
+Temporal - 215,XGBoost,0,0.08444587886333466,0
+Temporal - 215,XGBoost,0,0.2944379448890686,0
+Temporal - 215,XGBoost,0,0.7562737464904785,1
+Temporal - 215,XGBoost,0,0.03798393905162811,0
+Temporal - 215,XGBoost,0,0.9037930965423584,1
+Temporal - 215,XGBoost,0,0.00931191723793745,0
+Temporal - 215,XGBoost,0,0.016585540026426315,0
+Temporal - 215,XGBoost,0,0.059349920600652695,0
+Temporal - 215,XGBoost,0,0.005302777513861656,0
+Temporal - 215,XGBoost,0,0.0054494403302669525,0
+Temporal - 215,XGBoost,1,0.11590857803821564,0
+Temporal - 215,XGBoost,0,0.07358112186193466,0
+Temporal - 215,XGBoost,0,0.014607363380491734,0
+Temporal - 215,XGBoost,0,0.016472840681672096,0
+Temporal - 215,XGBoost,0,0.14889037609100342,0
+Temporal - 215,XGBoost,0,0.013859731145203114,0
+Temporal - 215,XGBoost,0,0.07751133292913437,0
+Temporal - 215,XGBoost,0,0.026967333629727364,0
+Temporal - 215,XGBoost,0,0.08932556211948395,0
+Temporal - 215,XGBoost,0,0.009032819420099258,0
+Temporal - 215,XGBoost,0,0.004900162108242512,0
+Temporal - 215,XGBoost,0,0.010815748944878578,0
+Temporal - 215,XGBoost,0,0.019228210672736168,0
+Temporal - 215,XGBoost,0,0.5699684619903564,1

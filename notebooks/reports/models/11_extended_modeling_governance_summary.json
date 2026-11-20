@@ -1,0 +1,214 @@
+{
+  "stage": "11_extended_model_benchmarking",
+  "timestamp": "2026-11-01T10:17:32Z",
+  "environment_dependencies": {
+    "python_version": "3.11.15",
+    "numpy_version": "2.3.5",
+    "pandas_version": "2.3.3",
+    "matplotlib_version": "3.10.0",
+    "sklearn_version": "1.9.1",
+    "xgboost_version": "3.2.0"
+  },
+  "cohort_accounting": {
+    "total_enrolled": 80,
+    "unlabelled_holdouts": [
+      "sub_005",
+      "sub_049"
+    ],
+    "total_labelled_eligible": 78,
+    "matched_dual_rate_eligible": 62,
+    "skipped_100hz_stress_eligible": 16,
+    "matched_positives": 7,
+    "matched_negatives": 55,
+    "full_positives": 9,
+    "full_negatives": 69
+  },
+  "execution_accounting": {
+    "total_configurations": 51,
+    "primary_configurations": 45,
+    "secondary_knn_sensitivity_configurations": 6,
+    "frozen_repeats": 5,
+    "frozen_folds_per_repeat": 5,
+    "cv_model_fits": 1275,
+    "holdout_inference_model_fits": 1275,
+    "total_model_fits": 2550,
+    "oof_prediction_rows": 17170,
+    "holdout_prediction_rows": 102,
+    "combined_prediction_rows": 17272
+  },
+  "predeclared_extended_models": {
+    "rf": {
+      "n_estimators": 100,
+      "max_depth": 3,
+      "min_samples_split": 6,
+      "min_samples_leaf": 3,
+      "class_weight": "balanced_subsample"
+    },
+    "xgb": {
+      "n_estimators": 50,
+      "max_depth": 2,
+      "learning_rate": 0.05,
+      "reg_alpha": 0.5,
+      "reg_lambda": 2.0,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8
+    },
+    "svm_linear": {
+      "C": 0.1,
+      "class_weight": "balanced",
+      "score": "raw uncalibrated decision function"
+    },
+    "svm_rbf": {
+      "C": 0.5,
+      "gamma": "scale",
+      "class_weight": "balanced",
+      "score": "raw uncalibrated decision function"
+    },
+    "knn": {
+      "weights": "distance",
+      "metric": "euclidean",
+      "primary_k": 5,
+      "secondary_sensitivity_k": [
+        3,
+        7
+      ]
+    }
+  },
+  "metric_definitions": {
+    "primary_precision_recall": "Average Precision (AP), step-wise integration.",
+    "primary_roc": "ROC-AUC via rank-based Mann-Whitney formulation with tie handling.",
+    "aggregation": "Mean and standard deviation across five repeated patient-level out-of-fold evaluations.",
+    "threshold_metrics": "Not asserted unless separately verified in Stage11 outputs."
+  },
+  "score_semantics": "Uncalibrated continuous model scores or decision functions. Not calibrated probabilities or clinical risk estimates.",
+  "holdout_inference_protocol": {
+    "subjects": [
+      "sub_005",
+      "sub_049"
+    ],
+    "inference_models_per_configuration": 25,
+    "reported_score": "mean_score across fold-trained models",
+    "dispersion_metric": "prediction_dispersion",
+    "semantic_warning": "Descriptive variation across fold-trained models only; not validated epistemic uncertainty. No holdout labels or holdout performance metrics are available."
+  },
+  "uncertainty_disclosures": {
+    "bootstrap_method": "Stratified patient-cluster bootstrap, B=2000.",
+    "bootstrap_caveat": "Conditional on fitted repeated-CV models; does not capture full retraining uncertainty. Small positive cohort sizes may produce unstable estimates."
+  },
+  "upstream_integrity_audit": {
+    "expected_artifact_count": 14,
+    "verified_count": 11,
+    "mismatch_count": 3,
+    "missing_count": 0,
+    "overall_status": "INCOMPLETE",
+    "artifacts": [
+      {
+        "artifact": "08_patient_phase_features.csv",
+        "path": "c:\\Users\\HP\\Desktop\\MSIMI_Project\\data\\features\\08_patient_phase_features.csv",
+        "expected_sha256": "857d622e285f4ce35d5fcba1c526ae0214afb42e7f780b3722a4e395026f3194",
+        "actual_sha256": "857d622e285f4ce35d5fcba1c526ae0214afb42e7f780b3722a4e395026f3194",
+        "status": "VERIFIED"
+      },
+      {
+        "artifact": "08_recording_level_features.csv",
+        "path": "c:\\Users\\HP\\Desktop\\MSIMI_Project\\data\\features\\08_recording_level_features.csv",
+        "expected_sha256": "137d19dc9442fd919e5ec76698f8dc896c8fcae8ce911e6f5086c38045a484a9",
+        "actual_sha256": "137d19dc9442fd919e5ec76698f8dc896c8fcae8ce911e6f5086c38045a484a9",
+        "status": "VERIFIED"
+      },
+      {
+        "artifact": "08_ecg_feature_summary.json",
+        "path": "c:\\Users\\HP\\Desktop\\MSIMI_Project\\reports\\features\\08_ecg_feature_summary.json",
+        "expected_sha256": "30005a80ea4086e82bf86b009f96de63599f329ae70d715acb96363a1dad1ecd",
+        "actual_sha256": "30005a80ea4086e82bf86b009f96de63599f329ae70d715acb96363a1dad1ecd",
+        "status": "VERIFIED"
+      },
+      {
+        "artifact": "08_multilead_st_depression_distribution.png",
+        "path": "c:\\Users\\HP\\Desktop\\MSIMI_Project\\outputs\\figures\\08_multilead_st_depression_distribution.png",
+        "expected_sha256": "45fbd0a36fb5faf9765e5ccb34971bed51460291c3bcd1abe3395a67e9a67ed1",
+        "actual_sha256": "45fbd0a36fb5faf9765e5ccb34971bed51460291c3bcd1abe3395a67e9a67ed1",
+        "status": "VERIFIED"
+      },
+      {
+        "artifact": "08_autonomic_and_repolarization_feature_matrix.png",
+        "path": "c:\\Users\\HP\\Desktop\\MSIMI_Project\\outputs\\figures\\08_autonomic_and_repolarization_feature_matrix.png",
+        "expected_sha256": "f91928cddf7c7bad72e585ad5ec910b459c58b1f309ee6e480185bdbb392e58a",
+        "actual_sha256": "f91928cddf7c7bad72e585ad5ec910b459c58b1f309ee6e480185bdbb392e58a",
+        "status": "VERIFIED"
+      },
+      {
+        "artifact": "09_patient_validation_splits.csv",
+        "path": "c:\\Users\\HP\\Desktop\\MSIMI_Project\\reports\\validation\\09_patient_validation_splits.csv",
+        "expected_sha256": "c4432657e96205bbe6002c6a0a105fd49ec345a298b1dd5832ff0118b2765453",
+        "actual_sha256": "c4432657e96205bbe6002c6a0a105fd49ec345a298b1dd5832ff0118b2765453",
+        "status": "VERIFIED"
+      },
+      {
+        "artifact": "09_patient_validation_summary.json",
+        "path": "c:\\Users\\HP\\Desktop\\MSIMI_Project\\reports\\validation\\09_patient_validation_summary.json",
+        "expected_sha256": "ae3ca0869605bffeaddf800ff2103ba993812879c4b15ae94acb4844707b4ad0",
+        "actual_sha256": "ae3ca0869605bffeaddf800ff2103ba993812879c4b15ae94acb4844707b4ad0",
+        "status": "VERIFIED"
+      },
+      {
+        "artifact": "09_cross_validation_split_distribution.png",
+        "path": "c:\\Users\\HP\\Desktop\\MSIMI_Project\\outputs\\figures\\09_cross_validation_split_distribution.png",
+        "expected_sha256": "43175b252e00028c6833f2471e7d5772a8ce612cea548afcc181eef260e63296",
+        "actual_sha256": "43175b252e00028c6833f2471e7d5772a8ce612cea548afcc181eef260e63296",
+        "status": "VERIFIED"
+      },
+      {
+        "artifact": "09_patient_eligibility_and_imbalance_matrix.png",
+        "path": "c:\\Users\\HP\\Desktop\\MSIMI_Project\\outputs\\figures\\09_patient_eligibility_and_imbalance_matrix.png",
+        "expected_sha256": "79fb3f3a93f430d0d159466c3908dacf35029d49cb42f8663c8e94ae48b8eb4d",
+        "actual_sha256": "79fb3f3a93f430d0d159466c3908dacf35029d49cb42f8663c8e94ae48b8eb4d",
+        "status": "VERIFIED"
+      },
+      {
+        "artifact": "10_model_evaluation_metrics.csv",
+        "path": "c:\\Users\\HP\\Desktop\\MSIMI_Project\\reports\\models\\10_model_evaluation_metrics.csv",
+        "expected_sha256": "1213bdef037a869fc07f3f648a1402dbed99dbc41e248e29fbab671d6ef5e494",
+        "actual_sha256": "1213bdef037a869fc07f3f648a1402dbed99dbc41e248e29fbab671d6ef5e494",
+        "status": "VERIFIED"
+      },
+      {
+        "artifact": "10_patient_predictions.csv",
+        "path": "c:\\Users\\HP\\Desktop\\MSIMI_Project\\reports\\models\\10_patient_predictions.csv",
+        "expected_sha256": "6d772030fd290b0df3751476589e56daed2621aa3c7b65942114e2a6c1be1ac0",
+        "actual_sha256": "6d772030fd290b0df3751476589e56daed2621aa3c7b65942114e2a6c1be1ac0",
+        "status": "VERIFIED"
+      },
+      {
+        "artifact": "10_modeling_governance_summary.json",
+        "path": "c:\\Users\\HP\\Desktop\\MSIMI_Project\\reports\\models\\10_modeling_governance_summary.json",
+        "expected_sha256": "3fbe13c736754c8626e40b4b4d4b1ab23f6f195d170725f9ffa37ace92e3132c",
+        "actual_sha256": "091d33290077210dcfb8daf86321971acde6e4ebfb759e5b2cdfaee803ac6782",
+        "status": "HASH_MISMATCH"
+      },
+      {
+        "artifact": "10_roc_prc_benchmark_curves.png",
+        "path": "c:\\Users\\HP\\Desktop\\MSIMI_Project\\outputs\\figures\\10_roc_prc_benchmark_curves.png",
+        "expected_sha256": "e0c24d812fef916d93d478856f9586f0c6ecbb25c0ba83fff161cca4d98805eb",
+        "actual_sha256": "2ad000e2bf81af3c0e1e542b9cc33e3408b1b8433d53609121e5901a46999780",
+        "status": "HASH_MISMATCH"
+      },
+      {
+        "artifact": "10_patient_prediction_score_distributions.png",
+        "path": "c:\\Users\\HP\\Desktop\\MSIMI_Project\\outputs\\figures\\10_patient_prediction_score_distributions.png",
+        "expected_sha256": "f5ecc5f9e0c3050c2a50395d4e46204fdefa7ced21a896ad8ca7a50a25a835c8",
+        "actual_sha256": "b4de693fb9b2a5bd7953cb2f45ec2a6f0b754c0ee5afe06a43ede3c621fa7b2a",
+        "status": "HASH_MISMATCH"
+      }
+    ],
+    "stage10_governance_discrepancy": "The current Stage10 governance JSON does not match its recorded frozen SHA256 reference. It is explicitly unverified; no replacement hash has been accepted."
+  },
+  "governance": {
+    "stage08_stage09_stage10_frozen_artifacts_overwritten_by_stage11": false,
+    "stage10_governance_hash_verified": false,
+    "split_assignments": "Frozen Stage09 patient-level splits",
+    "preprocessing": "Fold-local imputation and scaling",
+    "hyperparameter_tuning": "No validation-driven tuning or nested-CV optimization."
+  },
+  "neutral_governance_declaration": "Exploratory comparative benchmark only. No definitive winning model declared. No clinical claims or validation."
+}

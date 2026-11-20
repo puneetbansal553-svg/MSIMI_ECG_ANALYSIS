@@ -1,0 +1,6 @@
+QC_Metric_Criterion,Our_MSIMI_Pipeline,Literature_Standard,Benchmark_Reference,Status_Agreement
+Recording Duration Compliance,"476/480 conformant; 4 subjects non-standard (sub_029, 054, 106, 117); duration-normalized",>= 5 min for short-term ECG/HRV standard (Task Force 1996),"Task Force of ESC/NASPE, 1996 (Circulation)","Compliant (Rest 6 min, Stress 12 min, Recover 6 min exceed minimum)"
+Missing / Non-Finite Samples,"0 NaN, 0 Inf across 5,568 leads audited; 100% finite in parsed recordings",0% non-finite allowed; missing samples flagged or interpolated,"Orphanidou et al., 2015 (IEEE JBHI)",Perfect Compliance (0 NaN/Inf)
+Flatline & Electrode Detachment,0 flatline leads detected across all parsed recordings,Lead variance < 1e-4 ADC/mV flagged as lead disconnection,"Clifford et al., 2012 (Physiol Meas)",Full Pass (No detached leads)
+Unequal Lead Lengths,85 recordings exhibited unequal lead lengths; handled by minimum-length common truncation,Synchronous 12-lead acquisition mandates exact sample alignment,"Kligfield et al., 2007 (AHA/ACC/HRS Statement)",Resolved via deterministic common truncation
+ADC Boundary Saturation / Clipping,Monitored for saturation at <=5 or >=4090 counts; isolated to brief transient spikes,Clipping > 1% duration invalidates morphological analysis,"Behar et al., 2013 (Physiol Meas)",Compliant (<0.05% saturation)
