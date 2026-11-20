@@ -304,24 +304,8 @@ The scripts in `COMPARISON/code/` are supplementary. Inspect their input and out
 - Fit imputation, scaling, feature selection, and threshold-tuning steps using training data only within each validation split.
 - Record software versions, configuration values, random seeds, and output paths for final experiments.
 
-## 11. Limitations
-
-1. **Small positive cohort:** Only 9 subjects in the selected cohort have a positive MSIMI label, so model estimates may have substantial uncertainty.
-2. **Class imbalance:** Positive and negative labels are not evenly represented. Accuracy alone is not sufficient for evaluation.
-3. **Unspecified labels:** Two subjects have unspecified labels and must not be treated as labelled negative cases.
-4. **Recording irregularities:** Some recordings have parsing errors, shortened durations, or unequal lead lengths.
-5. **Automated R-peaks:** Automated detection and RR screening are not equivalent to expert clinical annotation.
-6. **Overlapping beat windows:** The fixed 800 ms segmentation creates overlap for many consecutive beats. This dependence must be considered in statistical analysis and model validation.
-7. **Research scope:** ECG-derived features and model outputs require independent validation before any clinical interpretation or deployment.
-
-## 12. Dataset Reference
+## 11. Dataset Reference
 
 Peng et al. (2024). **A multimodal physiological and psychological dataset for human with mental stress induced myocardial ischemia.** *Scientific Data*, 11, 704.
 
 https://doi.org/10.1038/s41597-024-03462-2
-
-Consult the original publication and dataset terms for the complete citation and data-use conditions.
-
-## 13. Disclaimer
-
-This repository is intended for academic and research purposes only. It is not a medical device, does not provide a clinical diagnosis, and must not be used to make patient-care decisions. Clinical interpretation must be performed by qualified healthcare professionals.
